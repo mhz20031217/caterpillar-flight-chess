@@ -236,3 +236,21 @@ gtk_widget_translate_coordinates(somewidget, gtk_widget_get_toplevel(somewidget)
 
 gint wx, wy;
 gdk_window_get_origin (gtk_widget_get_window (somewidget), &wx, &wy);
+
+
+# g_idle_add()
+
+raw gtk_label_set_label
+GTK_LABEL*,string s;
+
+update_message_list
+string s;
+
+move_chess
+GtkWidget* fixed,GtkWidget* widget,int x,int y;
+
+
+
+
+g_malloc(sizeof())
+g_idle_add(GSourceFunc())

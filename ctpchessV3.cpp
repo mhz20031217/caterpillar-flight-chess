@@ -1,10 +1,15 @@
 #include<bits/stdc++.h>
 #include<semaphore.h>
 #include<gtk/gtk.h>
+#include"mp3player.hpp"
+#include"adt.hpp"
+#ifdef WINDOWS
+#include<windows.h>
+#endif
 using namespace std;
 /* BEGIN DEBUG */
 //#define DEBUG
-ofstream logout("log.txt");
+
 /* END DEBUG */
 
 /* BEGIN CONSTANT */
@@ -13,59 +18,12 @@ const string APP_PACKAGE_NAME="org.caterpillar.flightchess";
 const string IMG_DICE="img/dice.png";
 const string IMG_USER="img/user.png";
 const int NUMBER_OF_CHESSES=4;
-const int INTERVAL_USECOND=50000;
+#ifdef DEGUG
+const int INTERVAL_USECOND=100;
+#else
+const int INTERVAL_USECOND=5000;
+#endif
 /* END CONSTANT */
-
-/* BEGIN ADT */
-string junk;
-static void Error(string msg){
-    cerr<<"[ERROR] "<<msg<<endl;
-    logout<<"[ERROR] "<<msg<<endl;
-    exit(0);
-}
-static void Print(string msg){
-    logout<<msg<<endl;
-    cout<<msg<<endl;
-}
-static void Message(string msg){
-    logout<<"[MESSAGE] "<<msg<<endl;
-    cout<<"[MESSAGE] "<<msg<<endl;
-}
-static void uniusleep(int us){
-    usleep(us);
-}
-static void unisleep(int s){
-    sleep(s);
-}
-static void voidPrompt(string msg){
-    cout<<msg;
-    getchar();
-}
-static int intPrompt(string msg, int min=INT_MIN,int max=INT_MAX){
-    int ret;
-    do{
-        cout<<msg;
-        fflush(stdout);
-        cin>>ret;
-    }while(ret<min||ret>=max);
-    return ret;
-}
-static double doublePrompt(string msg, double min=-INFINITY,double max=INFINITY){
-    cout<<msg;
-    fflush(stdout);
-    double ret;
-    do{
-        cin>>ret;
-    }while(ret<min||ret>=max);
-    return ret;
-}
-string itos(int x){
-    stringstream ss;
-    string ret;
-    ss<<x;ss>>ret;
-    return ret;
-}
-/* END ADT */
 
 /* BEGIN CLASS DEF */
 class Chess;
@@ -107,7 +65,6 @@ public:
     void gui_follow_dest(int step);
     void set_color(string color);
     void gui_show();
-    void gui_clicked();
     ~Chess();
 };
 class Player{
@@ -138,7 +95,8 @@ public:
     Place* exit;
     GtkWidget* dice_label;
     GtkWidget* user_label;
-    int dice_value;
+    GtkWidget* message;
+    GtkWidget* message_list;
     bool control_mode;
     GameState();
     void gui_set_elements(GtkWidget* board,GtkWidget* dice_label,GtkWidget* user_label);
@@ -148,11 +106,13 @@ public:
     int dice();
     int gui_dice();
     int roll();
+    Chess* choose_candidate(vector<Chess*>&v);
+    void gui_msg(string s);
     ~GameState();
 }gamestate;
 /* END CLASS DEF */
 
-/* BEGIN SIMPLE SIGNALS */
+/* BEGIN CATERPILLAR SIMPLE SIGNALS */
 const int C_SIGNAL_COUNT=2;
 // 0: dice, 1: chesses
 sem_t c_traffic_light[C_SIGNAL_COUNT];
@@ -161,14 +121,13 @@ union CSiganlMessage{
     int integer;
     double real;
     char ch;
-    string s;
     Place* place;
     Chess* chess;
     Player* player;
 }c_data[C_SIGNAL_COUNT];
 void c_signal_init(){
     for(int i=0;i<C_SIGNAL_COUNT;++i){
-        sem_init(&c_traffic_light[i],NULL,0);
+        sem_init(&c_traffic_light[i],0,0);
         c_flag[i]=0;
         memset(&c_data[i],0,sizeof(c_data[i]));
     }
@@ -188,7 +147,64 @@ void c_signal_finish(int i){
     assert(i>=0&&i<C_SIGNAL_COUNT);
     sem_post(&c_traffic_light[i]);
 }
-/* END SIMPLE SIGNALS */
+/* END CATERPILLAR SIMPLE SIGNALS */
+
+/* BEGIN MULTITHREAD GUI FUNCS */
+struct raw_set_label_t{
+    GtkLabel* label;
+    string s;
+};
+struct update_message_list_t{
+    string s;
+};
+struct move_chess_t{
+    GtkFixed* fixed;
+    GtkWidget* widget;
+    int x,y;
+};
+gboolean raw_set_label_f(gpointer data){
+    raw_set_label_t* pt = (raw_set_label_t*)data;
+    gtk_label_set_label(pt->label,pt->s.c_str());
+    g_free(data);
+    return FALSE;
+}
+void raw_set_label(GtkWidget* label,string s){
+    raw_set_label_t* x=(raw_set_label_t*)g_malloc0(sizeof(raw_set_label_t));
+    x->label=GTK_LABEL(label);
+    x->s=s;
+    g_idle_add(G_SOURCE_FUNC(raw_set_label_f),x);
+}
+gboolean update_message_list_f(gpointer data){
+    update_message_list_t* pt = (update_message_list_t*)data;
+    GtkWidget* new_label = gtk_label_new(pt->s.c_str());
+    gtk_label_set_line_wrap(GTK_LABEL(new_label),TRUE);
+    gtk_list_box_prepend(GTK_LIST_BOX(gamestate.message_list),new_label);
+    gtk_widget_show(new_label);
+    g_free(data);
+    return FALSE;
+}
+void update_message_list(string s){
+    update_message_list_t* pt=(update_message_list_t*)g_malloc0(sizeof(update_message_list_t));
+    pt->s=s;
+    g_idle_add(G_SOURCE_FUNC(update_message_list_f),pt);
+}
+gboolean move_chess_f(gpointer data){
+    move_chess_t* pt = (move_chess_t*)data;
+    gtk_fixed_move(pt->fixed,pt->widget,pt->x,pt->y);
+    g_free(data);
+    return FALSE;
+}
+void move_chess(GtkWidget* fixed,GtkWidget* widget,int x,int y){
+    move_chess_t* pt=(move_chess_t*)g_malloc0(sizeof(move_chess_t));
+    pt->fixed=GTK_FIXED(fixed);
+    pt->widget=widget;
+    pt->x=x;
+    pt->y=y;
+    g_idle_add(G_SOURCE_FUNC(move_chess_f),pt);
+    uniusleep(INTERVAL_USECOND);
+    // gtk_fixed_move(GTK_FIXED(fixed),widget,x,y);
+}
+/* END MULTITHREAD GUI FUNCS */
 
 /* BEGIN CHESS */
 Chess::Chess(Player* player){
@@ -223,6 +239,7 @@ void Chess::move(int step){
     this->move_to(dest);
 }
 void Chess::gui_follow_dest(int step){
+    gamestate.gui_msg("Moving chess...");
     Place* cur = this->place;
     int cnt = 0;
     for(;cnt<step;++cnt){
@@ -230,24 +247,22 @@ void Chess::gui_follow_dest(int step){
             if(step==cnt+1){
                 ++cnt;
                 cur = cur->get_exit(this);
-                gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
-                uniusleep(INTERVAL_USECOND);
+                move_chess(gamestate.board,this->widget,cur->x,cur->y);
                 break;
             }else{
                 break;
             }
         }
         cur = cur->get_exit(this);
-        gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
-        uniusleep(INTERVAL_USECOND);
+        move_chess(gamestate.board,this->widget,cur->x,cur->y);
     }
     for(;cnt<step;++cnt){
         cur = cur->get_entrance(this);
-        gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
-        uniusleep(INTERVAL_USECOND);
+        move_chess(gamestate.board,this->widget,cur->x,cur->y);
     }
     cur = cur->get_special_exit(this);
-    gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
+    move_chess(gamestate.board,this->widget,cur->x,cur->y);
+    gamestate.gui_msg("Done!");
     uniusleep(INTERVAL_USECOND);
 }
 void Chess::move_to(Place* place){
@@ -255,22 +270,31 @@ void Chess::move_to(Place* place){
     cur->remove_chess(this);
     place->add_chess(this);
     this->place = place;
-    gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,place->x,place->y);
+    move_chess(gamestate.board,this->widget,place->x,place->y);
     uniusleep(INTERVAL_USECOND);
 }
 void Chess::set_place(Place* place){
     this->place = place;
     place->add_chess(this);
 }
-void Chess::gui_show(){
-    this->widget = gtk_image_new_from_file(this->color.c_str());
-    gtk_widget_show(this->widget);
-    gtk_fixed_put(GTK_FIXED(gamestate.board),this->widget,this->place->x,this->place->y);
-}
-void Chess::gui_clicked(){
-    if(!c_signal_request(1))return;
-    c_data[1].chess=this;
+static gboolean 
+chess_clicked(GtkWidget*       event_box,
+              GdkEventButton*  event,
+              gpointer         data){
+    // printf("Chess clicked: %p\n",data);
+    if(!c_signal_request(1))return TRUE;
+    // printf("Chess clicked: %p, get permission\n");
+    c_data[1].chess=(Chess*)data;
     c_signal_finish(1);
+    return TRUE;
+}
+void Chess::gui_show(){
+    GtkWidget* image = gtk_image_new_from_file(this->color.c_str());
+    this->widget = gtk_event_box_new();
+    gtk_container_add(GTK_CONTAINER(this->widget),image);
+    g_signal_connect(G_OBJECT(this->widget),"button_release_event",G_CALLBACK(chess_clicked),this);
+    gtk_widget_show_all(this->widget);
+    gtk_fixed_put(GTK_FIXED(gamestate.board),this->widget,this->place->x,this->place->y);
 }
 void Chess::set_color(string color){
     this->color = color;
@@ -380,6 +404,7 @@ void Player::action(){
         }
         if(!has_chess_in_airport){
             Print("User "+itos(this->id)+", you have no planes in your airport.\nPlease roll dice.");
+            gamestate.gui_msg("User "+itos(this->id)+", you have no planes in your airport.\nPlease roll dice.");
             int dice_res=gamestate.roll();
             vector<Chess*>candidate;
             for(int i=0;i<chesses.size();++i){
@@ -390,14 +415,21 @@ void Player::action(){
             for(int i=0;i<candidate.size();++i){
                 Print("Chess "+itos(i)+": "+itos(candidate[i]->place->id));
             }
-            int bestp=intPrompt("Choose a candidate to move: ",0,candidate.size());
-            candidate[bestp]->move(dice_res);
+            if(gamestate.control_mode){
+                int bestp=intPrompt("Choose a candidate to move: ",0,candidate.size());
+                candidate[bestp]->move(dice_res);
+            }else{
+                Chess* choice=gamestate.choose_candidate(candidate);
+                choice->move(dice_res);
+            }
         }else{
-            Print("User "+itos(this->id)+" you still have plane(s) in your airport.\nPlease roll dice.");
+            Print("User "+itos(this->id)+", you still have plane(s) in your airport.\nPlease roll dice.");
+            gamestate.gui_msg("User "+itos(this->id)+", you still have plane(s) in your airport.\nPlease roll dice.");
             int dice_res1=gamestate.roll();
             if(dice_res1==6){
                 first_in_airport_chess->move(1);
                 Print("Great! You got 6 and please roll again to decide its step.");
+                gamestate.gui_msg("Great! You got 6 and please roll again to decide its step.");
                 int dice_res2=gamestate.roll();
                 first_in_airport_chess->move(dice_res2);
             }
@@ -414,8 +446,10 @@ void Player::action(){
         }
         if(!has_chess_in_airport){
             Print("Computer "+itos(this->id)+" has no planes in its airport.");
+            gamestate.gui_msg("Computer "+itos(this->id)+" has no planes in its airport.");
             int dice_res=gamestate.dice();
             Print("It rolls the dice and gets the value of "+itos(dice_res));
+            gamestate.gui_msg("It rolls the dice and gets the value of "+itos(dice_res));
             vector<Chess*>candidate;
             for(int i=0;i<this->chesses.size();++i){
                 if(this->chesses[i]->place==this->airport||this->chesses[i]->place==gamestate.exit)continue;
@@ -431,14 +465,18 @@ void Player::action(){
             //     }
             // }
             Print("And chooses the chess at "+itos(candidate[bestp]->place->id)+" to move.");
+            gamestate.gui_msg("And chooses the chess at "+itos(candidate[bestp]->place->id)+" to move.");
             candidate[bestp]->move(dice_res);
         }else{
-            Print("Computer still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.");
+            Print("Computer "+itos(this->id)+" still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.");
+            gamestate.gui_msg("Computer "+itos(this->id)+" still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.");
             int dice_res1=gamestate.dice();
             if(dice_res1==6){
                 Print("The result is 6 and a plane takes off.");
+                gamestate.gui_msg("The result is 6 and a plane takes off.");
                 first_in_airport_chess->move(1);
                 Print("It rolls the dice again to decide its step.");
+                gamestate.gui_msg("It rolls the dice again to decide its step.");
                 int dice_res2=gamestate.dice();
                 first_in_airport_chess->move(dice_res2);
             }
@@ -543,12 +581,25 @@ void GameState::read_map(istream& in){
     }
 }
 int GameState::main_loop(){
+    this->gui_msg("Welcome to Caterpillar Flight Chess V3!");
+    uniusleep(3*INTERVAL_USECOND);
+    this->gui_msg("3");
+    uniusleep(1*INTERVAL_USECOND);
+    this->gui_msg("2");
+    uniusleep(1*INTERVAL_USECOND);
+    this->gui_msg("1");
+    uniusleep(1*INTERVAL_USECOND);
+    this->gui_msg("Ready?");
+    uniusleep(1*INTERVAL_USECOND);
+    this->gui_msg("Go!");
     for(int round=0;;++round){
         Print("\n\nRound "+itos(round));
+        this->gui_msg("Round "+itos(round));
+        uniusleep(2*INTERVAL_USECOND);
         for(int i=0;i<this->number_of_players;++i){
-            uniusleep(INTERVAL_USECOND);
             Print("Player "+itos(i)+":");
-            gtk_label_set_label(GTK_LABEL(this->user_label),("Player: "+itos(i+1)+"/"+itos(this->number_of_players)).c_str());
+            raw_set_label(this->user_label,(itos(i)).c_str());
+            uniusleep(1*INTERVAL_USECOND);
             this->players[i]->action();
             vector<Chess*>&chesses=this->players[i]->chesses;
             for(int j=0;j<this->players[i]->number_of_chess;++j){
@@ -575,17 +626,24 @@ int GameState::dice(){
     # endif
     int x=rand()%6+1;
     Print("Dice value: "+string(1,x+'0'));
-    gtk_label_set_label(GTK_LABEL(this->dice_label),("Dice: "+itos(x)).c_str());
+    raw_set_label(this->dice_label,(itos(x)).c_str());
+    uniusleep(INTERVAL_USECOND);
     return x;
 }
-void dice_clicked(GtkImage* button,gpointer dice_popup){
-    
+static gboolean
+dice_clicked(GtkWidget*        event_box,
+                  GdkEventButton*   event,
+                  gpointer          data){
+    if(!c_signal_request(0))return TRUE;
+    c_signal_finish(0);
+    return TRUE;
 }
 int GameState::gui_dice(){
     c_signal_allow(0);
+    uniusleep(INTERVAL_USECOND);
     int x=rand()%6+1;
     Print("Dice value: "+string(1,x+'0'));
-    gtk_label_set_label(GTK_LABEL(this->dice_label),("Dice: "+itos(x)).c_str());
+    raw_set_label(this->dice_label,(itos(x)).c_str());
     return x;
 }
 int GameState::roll(){
@@ -602,6 +660,28 @@ int GameState::roll(){
     }
     return dice_res;
 }
+Chess* GameState::choose_candidate(vector<Chess*>&v){
+    assert(v.size());
+    Chess* ret=NULL;
+    bool flag=0;
+    Print("Choose a candidate to move.");
+    this->gui_msg("Choose a candidate to move.");
+    while(!flag){
+        c_signal_allow(1);
+        ret=c_data[1].chess;
+        for(int i=0;i<v.size();++i){
+            if(v[i]==ret){
+                flag=1;
+                Print("You chose candidate: "+itos(i));
+                break;
+            }
+        }
+    }
+    return ret;
+}
+void GameState::gui_msg(string s){
+    update_message_list(s);
+}
 GameState::~GameState(){
     for(int i=0;i<this->places.size();++i){
         delete this->places[i];
@@ -612,19 +692,64 @@ GameState::~GameState(){
 }
 /* END GAMESTATE */
 
+/* BEGIN RUNTIME MANAGER */
+static void home_button_clicked(GtkButton* button,gpointer data){
+    #ifndef WINDOWS
+    system("./launcher &");
+    #else
+    WinExec("launcher.exe",SW_SHOW);
+    #endif
+    exit(0);
+}
+static void restart_button_clicked(GtkButton* button,gpointer data){
+    #ifndef WINDOWS
+    system("./game &");
+    #else
+    WinExec("game.exe",SW_SHOW);
+    #endif
+    exit(0);
+}
+static void help_button_clicked(GtkButton* button,gpointer data){
+    exit(0);
+}
+static void about_button_clicked(GtkButton* button,gpointer data){
+    exit(0);
+}
+/* END RUNTIME MANAGER */
+
 static void running(){
     int result = gamestate.main_loop();
-    GtkWidget* win_prompt;
-    win_prompt = gtk_window_new(GTK_WINDOW_TOPLEVEL);
-    gtk_window_set_title(GTK_WINDOW(win_prompt),"YOU WIN!");
-    gtk_container_set_border_width(GTK_CONTAINER(win_prompt),16);
-    //gtk_window_set_position(GTK_WINDOW(win_prompt),GTK_WIN_POS_CENTER);
-    GtkWidget* label;
-    label = gtk_label_new(("Player "+itos(result+1)+" WINS!").c_str());
-    gtk_container_add(GTK_CONTAINER(win_prompt),label);
-    gtk_widget_show_all(win_prompt);
-    // gtk_window_activate_focus(GTK_WINDOW(win_prompt));
-    unisleep(1000);
+    Print("Player "+itos(result)+" wins!");
+    #ifndef WINDOWS
+    system(("./winning "+itos(result)+" &").c_str());
+    #else
+    WinExec(("winning.exe "+itos(result)).c_str(),SW_SHOW);
+    #endif
+    exit(0);
+}
+
+static void music(string conf){
+    ifstream fin(conf.c_str());
+    if(!fin){
+        Error("No music config file!");
+    }
+    vector<string>filename;
+    while(fin){
+        string tmp;
+        fin>>tmp;
+        if(tmp=="")continue;
+        filename.push_back(tmp);
+    }
+    for(int i=0;;++i){
+        Mp3Player player;
+        if(player.open(filename[i%filename.size()])){
+            unisleep(5);
+            continue;
+        }
+        player.play();
+        player.close();
+        unisleep(5);
+    }
 }
 
 static void init(GtkApplication* app,gpointer* app_data){
@@ -641,6 +766,7 @@ static void init(GtkApplication* app,gpointer* app_data){
         if(!conf)Error("Invalid users definition!");
         conf>>(type_of_players[i]);
     }
+    conf>>gamestate.control_mode;
     conf>>map_path;
     if(gamestate.number_of_players<2||gamestate.number_of_players>100){
         Error("Invalid number_of_players!");
@@ -653,7 +779,7 @@ static void init(GtkApplication* app,gpointer* app_data){
     GtkWidget* main_window;
     main_window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(main_window),"Flight Chess");
-    gtk_window_set_default_size(GTK_WINDOW(main_window),1080,840);
+    gtk_window_set_default_size(GTK_WINDOW(main_window),800,600);
 
     GtkWidget* main_box;
     main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL,0);
@@ -681,7 +807,7 @@ static void init(GtkApplication* app,gpointer* app_data){
     separator = gtk_separator_new(GTK_ORIENTATION_HORIZONTAL);
 
     GtkWidget* panel;
-    panel = gtk_list_box_new();
+    panel = gtk_box_new(GTK_ORIENTATION_VERTICAL,4);
 
     GtkWidget* panel_box;
     panel_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL,0);
@@ -696,32 +822,52 @@ static void init(GtkApplication* app,gpointer* app_data){
     dice_image = gtk_image_new_from_file(IMG_DICE.c_str());
     dice_event_box = gtk_event_box_new();
     gtk_container_add(GTK_CONTAINER(dice_event_box), dice_image);
-    g_signal_connect(G_OBJECT(dice_event_box),"button_press_event",G_CALLBACK(dice_clicked),dice_image);
+    g_signal_connect(G_OBJECT(dice_event_box),"button_release_event",G_CALLBACK(dice_clicked),dice_image);
 
-    user_label = gtk_label_new("Player: 0/0");
-    dice_label = gtk_label_new("Dice: NULL");
+    user_label = gtk_label_new("");
+    dice_label = gtk_label_new("");
 
     gtk_box_pack_end(GTK_BOX(panel_user_box),user_label,FALSE,FALSE,FALSE);
     gtk_box_pack_end(GTK_BOX(panel_user_box),user_image,FALSE,FALSE,FALSE);
     gtk_box_pack_end(GTK_BOX(panel_dice_box),dice_label,FALSE,FALSE,FALSE);
     gtk_box_pack_end(GTK_BOX(panel_dice_box),dice_event_box,FALSE,FALSE,FALSE);
     
-    gtk_box_pack_start(GTK_BOX(panel_box),panel_user_box,FALSE,FALSE,FALSE);
-    gtk_box_pack_start(GTK_BOX(panel_box),panel_dice_box,FALSE,FALSE,FALSE);
+    gtk_box_pack_start(GTK_BOX(panel_box),panel_user_box,TRUE,FALSE,FALSE);
+    gtk_box_pack_start(GTK_BOX(panel_box),panel_dice_box,TRUE,FALSE,FALSE);
 
-    
+    GtkWidget* panel_button_box = gtk_button_box_new(GTK_ORIENTATION_HORIZONTAL);
+    GtkWidget *home_button,*restart_button,*help_button,*about_button;
+    home_button = gtk_button_new_from_icon_name("go-home-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(home_button),"released",G_CALLBACK(home_button_clicked),NULL);
+    restart_button = gtk_button_new_from_icon_name("system-reboot-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(restart_button),"released",G_CALLBACK(restart_button_clicked),NULL);
+    help_button = gtk_button_new_from_icon_name("help-browser-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(help_button),"released",G_CALLBACK(help_button_clicked),NULL);
+    about_button = gtk_button_new_from_icon_name("help-about-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(about_button),"released",G_CALLBACK(about_button_clicked),NULL);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),home_button);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),restart_button);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),help_button);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),about_button);
 
-    GtkWidget *log_info, *list_of_state;
-    GtkTextBuffer *log_info_buffer;
-    log_info = gtk_text_view_new();
-    gtk_text_view_set_editable(GTK_TEXT_VIEW(log_info), FALSE);
-    log_info_buffer = gtk_text_view_get_buffer(GTK_TEXT_VIEW(log_info));
-    
+    GtkWidget *message, *list_of_state;
+    message = gtk_label_new("");
+    gtk_label_set_line_wrap(GTK_LABEL(message),TRUE);
+    gtk_widget_set_size_request(message,200,32);
+    gamestate.message = message;
 
-    gtk_list_box_prepend(GTK_LIST_BOX(panel),log_info);
-    gtk_list_box_prepend(GTK_LIST_BOX(panel),panel_box);
+    GtkWidget *message_list, *message_list_window;
+    message_list = gtk_list_box_new();
+    gamestate.message_list = message_list;
+    message_list_window = gtk_scrolled_window_new(NULL,NULL);
+    gtk_container_add(GTK_CONTAINER(message_list_window),message_list);
+    // gtk_list_box_prepend(GTK_LIST_BOX(panel),panel_box);
+    // gtk_list_box_prepend(GTK_LIST_BOX(panel),message);
+    // gtk_list_box_prepend(GTK_LIST_BOX(panel),panel_button_box);
 
-
+    gtk_box_pack_start(GTK_BOX(panel),panel_button_box,FALSE,FALSE,0);
+    gtk_box_pack_start(GTK_BOX(panel),panel_box,FALSE,FALSE,4);
+    gtk_box_pack_start(GTK_BOX(panel),message_list_window,TRUE,TRUE,0);
 
     gtk_box_pack_start(GTK_BOX(main_box),board_overlay,TRUE,TRUE,FALSE);
     gtk_box_pack_start(GTK_BOX(main_box),separator,FALSE,FALSE,FALSE);
@@ -731,25 +877,16 @@ static void init(GtkApplication* app,gpointer* app_data){
     gtk_widget_show_all(main_window);
 
 
-    GtkWidget* dice_popup;
-    dice_popup = gtk_window_new(GTK_WINDOW_POPUP);
-    GtkWidget* box;
-    box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL,0);
-    GtkWidget* image;
-    image = gtk_image_new_from_file(IMG_DICE.c_str());
-    GtkWidget* button;
-    button = gtk_button_new_with_label("ROLL");
-    gtk_box_pack_start(GTK_BOX(box),image,FALSE,FALSE,0);
-    gtk_box_pack_start(GTK_BOX(box),button,FALSE,FALSE,0);
-
     gamestate.gui_set_elements(real_board,dice_label,user_label);
     gamestate.read_map(mapin);
     gamestate.set_player_type(type_of_players);
 
     c_signal_init();
 
-    thread run_game(running);
-    run_game.detach();
+    string music_conf;
+    conf>>music_conf;
+    thread run_game(running),run_music(music,music_conf);
+    run_game.detach();run_music.detach();
 }
 
 int main(int argc,char **argv){

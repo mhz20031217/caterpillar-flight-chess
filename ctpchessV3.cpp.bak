@@ -1,0 +1,831 @@
+#include<bits/stdc++.h>
+#include<semaphore.h>
+#include<gtk/gtk.h>
+#include"mp3player.hpp"
+#include"adt.hpp"
+using namespace std;
+/* BEGIN DEBUG */
+//#define DEBUG
+
+/* END DEBUG */
+
+/* BEGIN CONSTANT */
+const string CONFIG_FILE_NAME="ctpchess.conf";
+const string APP_PACKAGE_NAME="org.caterpillar.flightchess";
+const string IMG_DICE="img/dice.png";
+const string IMG_USER="img/user.png";
+const int NUMBER_OF_CHESSES=4;
+#ifdef DEGUG
+const int INTERVAL_USECOND=100000;
+#else
+const int INTERVAL_USECOND=500000;
+#endif
+/* END CONSTANT */
+
+/* BEGIN CLASS DEF */
+class Chess;
+class Place;
+class Player;
+class GameState;
+class Place{
+public:
+    int id;
+    int x,y;
+    Place *entrance;
+    vector<Place*>exit;
+    vector<Place*>special_exit;
+    set<Chess*>chesses;
+    Place();
+    void set_coordinate(int x,int y);
+    void set_exit(vector<Place*>exit,vector<Place*>special_exit);
+    void set_entrance(Place* entrance);
+    Place* get_exit(Chess* chess);
+    Place* get_special_exit(Chess* chess);
+    Place* get_entrance(Chess* chess);
+    void set_id(int id);
+    void add_chess(Chess* chess);
+    void remove_chess(Chess* chess);
+    void remove_opponent(Chess* chess);
+};
+class Chess{
+public:
+    Player* player;
+    Place* place;
+    string color;
+    GtkWidget* widget;
+    Chess(Player* player);
+    Place* get_dest(int step);
+    void move_to(Place* place);
+    void move(int step);
+    bool conflict(int step);
+    void set_place(Place* place);
+    void gui_follow_dest(int step);
+    void set_color(string color);
+    void gui_show();
+    ~Chess();
+};
+class Player{
+public:
+    int id;
+    int number_of_chess;
+    int type;
+    string color;
+    vector<Chess*>chesses;
+    Place* airport;
+    Player();
+    void set_id(int id);
+    void init_chesses(int n);
+    void set_airport(Place* airport);
+    void set_color(string color);
+    void set_type(int type);
+    void action();
+    void take_back(Chess* chess);
+    ~Player();
+};
+class GameState{
+public:
+    vector<Player*>players;
+    vector<Place*>places;
+    GtkWidget* board;
+    int number_of_players;
+    int number_of_places;
+    Place* exit;
+    GtkWidget* dice_label;
+    GtkWidget* user_label;
+    GtkWidget* message;
+    GtkWidget* message_list;
+    bool control_mode;
+    GameState();
+    void gui_set_elements(GtkWidget* board,GtkWidget* dice_label,GtkWidget* user_label);
+    void read_map(istream& in);
+    void set_player_type(vector<int>v);
+    int main_loop();
+    int dice();
+    int gui_dice();
+    int roll();
+    Chess* choose_candidate(vector<Chess*>&v);
+    void gui_msg(string s);
+    ~GameState();
+}gamestate;
+/* END CLASS DEF */
+
+/* BEGIN CATERPILLAR SIMPLE SIGNALS */
+const int C_SIGNAL_COUNT=2;
+// 0: dice, 1: chesses
+sem_t c_traffic_light[C_SIGNAL_COUNT];
+bool c_flag[C_SIGNAL_COUNT];
+union CSiganlMessage{
+    int integer;
+    double real;
+    char ch;
+    Place* place;
+    Chess* chess;
+    Player* player;
+}c_data[C_SIGNAL_COUNT];
+void c_signal_init(){
+    for(int i=0;i<C_SIGNAL_COUNT;++i){
+        sem_init(&c_traffic_light[i],0,0);
+        c_flag[i]=0;
+        memset(&c_data[i],0,sizeof(c_data[i]));
+    }
+}
+void c_signal_allow(int i){
+    assert(i>=0&&i<C_SIGNAL_COUNT);
+    c_flag[i]=1;
+    sem_wait(&c_traffic_light[i]);
+}
+bool c_signal_request(int i){
+    assert(i>=0&&i<C_SIGNAL_COUNT);
+    if(c_flag[i]==0)return 0;
+    c_flag[i]=0;
+    return 1;
+}
+void c_signal_finish(int i){
+    assert(i>=0&&i<C_SIGNAL_COUNT);
+    sem_post(&c_traffic_light[i]);
+}
+/* END CATERPILLAR SIMPLE SIGNALS */
+
+/* BEGIN CHESS */
+Chess::Chess(Player* player){
+    this->player = player;
+    this->place = NULL;
+    this->widget = NULL;
+}
+Place* Chess::get_dest(int step){
+    Place* cur = this->place;
+    int cnt = 0;
+    for(;cnt<step;++cnt){
+        if(cur->get_exit(this)==gamestate.exit){
+            if(step==cnt+1){
+                ++cnt;
+                cur = cur->get_exit(this);
+                break;
+            }else{
+                break;
+            }
+        }
+        cur = cur->get_exit(this);
+    }
+    for(;cnt<step;++cnt){
+        cur = cur->get_entrance(this);
+    }
+    cur = cur->get_special_exit(this);
+    return cur;
+}
+void Chess::move(int step){
+    this->gui_follow_dest(step);
+    Place* dest = this->get_dest(step);
+    this->move_to(dest);
+}
+void Chess::gui_follow_dest(int step){
+    gamestate.gui_msg("Moving chess...");
+    Place* cur = this->place;
+    int cnt = 0;
+    for(;cnt<step;++cnt){
+        if(cur->get_exit(this)==gamestate.exit){
+            if(step==cnt+1){
+                ++cnt;
+                cur = cur->get_exit(this);
+                gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
+                uniusleep(INTERVAL_USECOND);
+                break;
+            }else{
+                break;
+            }
+        }
+        cur = cur->get_exit(this);
+        gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
+        uniusleep(INTERVAL_USECOND);
+    }
+    for(;cnt<step;++cnt){
+        cur = cur->get_entrance(this);
+        gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
+        uniusleep(INTERVAL_USECOND);
+    }
+    cur = cur->get_special_exit(this);
+    gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,cur->x,cur->y);
+    gamestate.gui_msg("Done!");
+    uniusleep(INTERVAL_USECOND);
+}
+void Chess::move_to(Place* place){
+    Place* cur = this->place;
+    cur->remove_chess(this);
+    place->add_chess(this);
+    this->place = place;
+    gtk_fixed_move(GTK_FIXED(gamestate.board),this->widget,place->x,place->y);
+    uniusleep(INTERVAL_USECOND);
+}
+void Chess::set_place(Place* place){
+    this->place = place;
+    place->add_chess(this);
+}
+static gboolean 
+chess_clicked(GtkWidget*       event_box,
+              GdkEventButton*  event,
+              gpointer         data){
+    // printf("Chess clicked: %p\n",data);
+    if(!c_signal_request(1))return TRUE;
+    // printf("Chess clicked: %p, get permission\n");
+    c_data[1].chess=(Chess*)data;
+    c_signal_finish(1);
+    return TRUE;
+}
+void Chess::gui_show(){
+    GtkWidget* image = gtk_image_new_from_file(this->color.c_str());
+    this->widget = gtk_event_box_new();
+    gtk_container_add(GTK_CONTAINER(this->widget),image);
+    g_signal_connect(G_OBJECT(this->widget),"button_release_event",G_CALLBACK(chess_clicked),this);
+    gtk_widget_show_all(this->widget);
+    gtk_fixed_put(GTK_FIXED(gamestate.board),this->widget,this->place->x,this->place->y);
+}
+void Chess::set_color(string color){
+    this->color = color;
+}
+Chess::~Chess(){
+    g_object_unref(this->widget);
+}
+/* END CHESS */
+
+/* BEGIN PLACE */
+Place::Place(){
+    this->id = -1;
+    this->x = -1;
+    this->y = -1;
+    this->entrance = NULL;
+}
+void Place::set_id(int id){
+    this->id = id;
+}
+void Place::set_coordinate(int x,int y){
+    this->x = x;
+    this->y = y;
+}
+void Place::set_entrance(Place* entrance){
+    this->entrance = entrance;
+}
+void Place::set_exit(vector<Place*>exit,vector<Place*>special_exit){
+    this->exit = exit;
+    this->special_exit = special_exit;
+}
+Place* Place::get_entrance(Chess* chess){
+    return this->entrance;
+}
+Place* Place::get_exit(Chess* chess){
+    return this->exit[chess->player->id];
+}
+Place* Place::get_special_exit(Chess* chess){
+    return this->special_exit[chess->player->id];
+}
+void Place::add_chess(Chess* chess){
+    Print("Request add of Chess (player: "+itos(chess->player->id)+" place: "+itos(chess->place->id)+") to "+itos(this->id)+".");
+    if(this!=gamestate.exit)this->remove_opponent(chess);
+    this->chesses.insert(chess);
+}
+void Place::remove_chess(Chess* chess){
+    Print("Request removal of Chess (player: "+itos(chess->player->id)+" place: "+itos(chess->place->id)+") from "+itos(this->id)+".");
+    assert(this->chesses.find(chess)!=this->chesses.end());
+    this->chesses.erase(chess);
+}
+void Place::remove_opponent(Chess* chess){
+    set<Chess*>tmp = this->chesses;
+    for(set<Chess*>::iterator it=tmp.begin();it!=tmp.end();++it){
+        if((*it)->player->id!=chess->player->id){
+            // this->remove_chess(*it);
+            Print("Removing opponent Chess (player: "+itos(chess->player->id)+" place: "+itos(chess->place->id)+") from "+itos(this->id)+".");
+            (*it)->player->take_back((*it));
+        }
+    }
+}
+/* END PLACE */
+
+/* BEGIN PLAYER */
+Player::Player(){
+    this->id = -1;
+    this->number_of_chess = -1;
+    this->type = -1;
+    this->color = "ERROR";
+    this->airport = NULL;
+}
+void Player::set_id(int id){
+    this->id = id;
+}
+void Player::set_airport(Place* airport){
+    this->airport = airport;
+};
+void Player::set_color(string color){
+    this->color = color;
+}
+void Player::set_type(int type){
+    this->type = type;
+}
+void Player::init_chesses(int n){
+    assert(this->id!=-1);
+    assert(this->airport!=NULL);
+    assert(this->color!="ERROR");
+    assert(this->id!=-1);
+    this->number_of_chess=n;
+    this->chesses.resize(n);
+    for(int i=0;i<n;++i){
+        this->chesses[i]=new Chess(this);
+        this->chesses[i]->set_color(this->color);
+        this->chesses[i]->set_place(this->airport);
+        this->chesses[i]->gui_show();
+    }
+}
+void Player::action(){
+    vector<Chess*>&chesses = this->chesses;
+    if(this->type == 1){ // RealUser
+        bool has_chess_in_airport=false;
+        Chess* first_in_airport_chess=NULL;
+        for(int i=0;i<chesses.size();++i){
+            if(chesses[i]->place==this->airport){
+                has_chess_in_airport=true;
+                first_in_airport_chess=chesses[i];
+                break;
+            }
+        }
+        if(!has_chess_in_airport){
+            Print("User "+itos(this->id)+", you have no planes in your airport.\nPlease roll dice.");
+            gamestate.gui_msg("User "+itos(this->id)+", you have no planes in your airport.\nPlease roll dice.");
+            int dice_res=gamestate.roll();
+            vector<Chess*>candidate;
+            for(int i=0;i<chesses.size();++i){
+                if(chesses[i]->place==gamestate.exit)continue;
+                candidate.push_back(this->chesses[i]);
+            }
+            Print("Candidates:");
+            for(int i=0;i<candidate.size();++i){
+                Print("Chess "+itos(i)+": "+itos(candidate[i]->place->id));
+            }
+            if(gamestate.control_mode){
+                int bestp=intPrompt("Choose a candidate to move: ",0,candidate.size());
+                candidate[bestp]->move(dice_res);
+            }else{
+                Chess* choice=gamestate.choose_candidate(candidate);
+                choice->move(dice_res);
+            }
+        }else{
+            Print("User "+itos(this->id)+", you still have plane(s) in your airport.\nPlease roll dice.");
+            gamestate.gui_msg("User "+itos(this->id)+", you still have plane(s) in your airport.\nPlease roll dice.");
+            int dice_res1=gamestate.roll();
+            if(dice_res1==6){
+                first_in_airport_chess->move(1);
+                Print("Great! You got 6 and please roll again to decide its step.");
+                gamestate.gui_msg("Great! You got 6 and please roll again to decide its step.");
+                int dice_res2=gamestate.roll();
+                first_in_airport_chess->move(dice_res2);
+            }
+        }
+    }else if(this->type == 0){ // Computer
+        bool has_chess_in_airport=false;
+        Chess* first_in_airport_chess=NULL;
+        for(int i=0;i<chesses.size();++i){
+            if(chesses[i]->place==this->airport){
+                has_chess_in_airport=true;
+                first_in_airport_chess=chesses[i];
+                break;
+            }
+        }
+        if(!has_chess_in_airport){
+            Print("Computer "+itos(this->id)+" has no planes in its airport.");
+            gamestate.gui_msg("Computer "+itos(this->id)+" has no planes in its airport.");
+            int dice_res=gamestate.dice();
+            Print("It rolls the dice and gets the value of "+itos(dice_res));
+            gamestate.gui_msg("It rolls the dice and gets the value of "+itos(dice_res));
+            vector<Chess*>candidate;
+            for(int i=0;i<this->chesses.size();++i){
+                if(this->chesses[i]->place==this->airport||this->chesses[i]->place==gamestate.exit)continue;
+                candidate.push_back(this->chesses[i]);
+            }
+            int bestn=0,bestp=0;
+            if(candidate.size()==0)Error("Impossible situation!");
+            // for(int i=0;i<candidate.size();++i){
+            //     int value=(candidate[i]->get_dest(dice_res)->get_exit(candidate[i])!=candidate[i]->get_dest(dice_res)->get_special_exit(candidate[i]))?5:1;
+            //     if(value>bestn){
+            //         bestn=value;
+            //         bestp=i;
+            //     }
+            // }
+            Print("And chooses the chess at "+itos(candidate[bestp]->place->id)+" to move.");
+            gamestate.gui_msg("And chooses the chess at "+itos(candidate[bestp]->place->id)+" to move.");
+            candidate[bestp]->move(dice_res);
+        }else{
+            Print("Computer "+itos(this->id)+" still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.");
+            gamestate.gui_msg("Computer "+itos(this->id)+" still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.");
+            int dice_res1=gamestate.dice();
+            if(dice_res1==6){
+                Print("The result is 6 and a plane takes off.");
+                gamestate.gui_msg("The result is 6 and a plane takes off.");
+                first_in_airport_chess->move(1);
+                Print("It rolls the dice again to decide its step.");
+                gamestate.gui_msg("It rolls the dice again to decide its step.");
+                int dice_res2=gamestate.dice();
+                first_in_airport_chess->move(dice_res2);
+            }
+        }
+    }
+}
+void Player::take_back(Chess* chess){
+    chess->move_to(this->airport);
+}
+Player::~Player(){
+    for(int i=0;i<this->chesses.size();++i){
+        delete this->chesses[i];
+    }
+}
+/* END PLAYER */
+
+/* BEGIN GAMESTATE */
+GameState::GameState(){
+    this->number_of_places = -1;
+    this->number_of_players = -1;
+    this->exit = NULL;
+    this->board = this->dice_label = this->user_label = NULL;
+}
+void GameState::gui_set_elements(GtkWidget* board,GtkWidget* dice_label,GtkWidget* user_label){
+    this->board = board;
+    this->dice_label = dice_label;
+    this->user_label = user_label;
+}
+void GameState::set_player_type(vector<int>v){
+    assert(v.size()==this->number_of_players);
+    for(int i=0;i<this->number_of_players;++i){
+        this->players[i]->set_type(v[i]);
+    }
+}
+void GameState::read_map(istream& in){
+    int tmp;
+    in >> tmp;
+    if(tmp!=this->number_of_players){
+        Error("The map is incapable for this number of player(s).");
+    }
+    in >> this->number_of_places;
+    Print("Number of places: "+itos(number_of_places));
+
+    this->places.resize(this->number_of_places);
+    for(int i=0;i<this->number_of_places;++i){
+        this->places[i]=new Place();
+        this->places[i]->set_id(i);
+    }
+    for(int i=0;i<this->number_of_places;++i){
+        int id,entrance;
+        vector<Place*>exits(number_of_players),special_exits(number_of_players);
+        in>>id>>entrance;
+        this->places[i]->set_entrance(this->places[entrance]);
+        for(int j=0;j<this->number_of_players;++j){
+            int x;
+            in>>x;
+            if(x<0||x>=this->number_of_places){
+                Error("Invalid map file! #1");
+            }
+            exits[j]=this->places[x];
+        }
+        for(int j=0;j<this->number_of_players;++j){
+            int x;
+            in>>x;
+            if(x<0||x>=this->number_of_places){
+                Error("Invalid map file! #2");
+            }
+            special_exits[j]=this->places[x];
+        }
+        this->places[i]->set_exit(exits,special_exits);
+    }
+    int number_of_visible_places;
+    in>>number_of_visible_places;
+    Print("Number of visible places: "+itos(number_of_visible_places));
+    for(int i=0;i<number_of_visible_places;++i){
+        int id,x,y;
+        in>>id>>x>>y;
+        this->places[i]->set_coordinate(x,y);
+    }
+    in>>tmp;
+    if(tmp<0||tmp>=this->number_of_places){
+        Error("Invalid map file! #3: "+itos(tmp));
+    }
+
+    this->exit=this->places[tmp];
+
+    this->players.resize(number_of_players);
+    for(int i=0;i<this->number_of_players;++i){
+        string color;
+        in>>color;
+        this->players[i]=new Player();
+        this->players[i]->set_id(i);
+        this->players[i]->set_color(color);
+    }
+    for(int i=0;i<this->number_of_players;++i){
+        int airport;
+        in>>airport;
+        this->players[i]->set_airport(this->places[airport]);
+    }
+    for(int i=0;i<this->number_of_players;++i){
+        this->players[i]->init_chesses(NUMBER_OF_CHESSES);
+    }
+}
+int GameState::main_loop(){
+    this->gui_msg("Welcome to Caterpillar Flight Chess V3!");
+    this->gui_msg("3");
+    this->gui_msg("2");
+    this->gui_msg("1");
+    this->gui_msg("Ready?");
+    this->gui_msg("Go!");
+    for(int round=0;;++round){
+        Print("\n\nRound "+itos(round));
+        this->gui_msg("Round "+itos(round));
+        unisleep(1);
+        for(int i=0;i<this->number_of_players;++i){
+            Print("Player "+itos(i)+":");
+            gtk_label_set_label(GTK_LABEL(this->user_label),(itos(i)).c_str());
+            this->players[i]->action();
+            vector<Chess*>&chesses=this->players[i]->chesses;
+            for(int j=0;j<this->players[i]->number_of_chess;++j){
+                Print("Player "+itos(i)+": Chess "+itos(j)+": "+itos(chesses[j]->place->id));
+            }
+            bool flag=true;
+            for(int j=0;j<this->players[i]->number_of_chess;++j){
+                if(chesses[j]->place!=this->exit){
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag){
+                return i;
+            }
+        }
+    }
+    Error("Main loop returns\n");
+    return -1;
+}
+int GameState::dice(){
+    # ifdef DEBUG
+    return intPrompt("Dice value: ",1,7);
+    # endif
+    int x=rand()%6+1;
+    Print("Dice value: "+string(1,x+'0'));
+    gtk_label_set_label(GTK_LABEL(this->dice_label),(itos(x)).c_str());
+    return x;
+}
+static gboolean
+dice_clicked(GtkWidget*        event_box,
+                  GdkEventButton*   event,
+                  gpointer          data){
+    if(!c_signal_request(0))return TRUE;
+    c_signal_finish(0);
+    return TRUE;
+}
+int GameState::gui_dice(){
+    c_signal_allow(0);
+    uniusleep(INTERVAL_USECOND);
+    int x=rand()%6+1;
+    Print("Dice value: "+string(1,x+'0'));
+    gtk_label_set_label(GTK_LABEL(this->dice_label),(itos(x)).c_str());
+    return x;
+}
+int GameState::roll(){
+    # ifdef DEBUG
+    return intPrompt("Dice value: ",1,7);
+    # endif
+    uniusleep(INTERVAL_USECOND);
+    int dice_res;
+    if(this->control_mode){
+        voidPrompt("Roll dice? ");
+        dice_res=this->dice();
+    }else{
+        dice_res=this->gui_dice();
+    }
+    return dice_res;
+}
+Chess* GameState::choose_candidate(vector<Chess*>&v){
+    assert(v.size());
+    Chess* ret=NULL;
+    bool flag=0;
+    Print("Choose a candidate to move.");
+    this->gui_msg("Choose a candidate to move.");
+    while(!flag){
+        c_signal_allow(1);
+        uniusleep(INTERVAL_USECOND);
+        ret=c_data[1].chess;
+        for(int i=0;i<v.size();++i){
+            if(v[i]==ret){
+                flag=1;
+                Print("You chose candidate: "+itos(i));
+                break;
+            }
+        }
+    }
+    return ret;
+}
+void GameState::gui_msg(string s){
+    GtkWidget* new_label = gtk_label_new("");
+    gtk_label_set_line_wrap(GTK_LABEL(new_label),TRUE);
+    gtk_label_set_label(GTK_LABEL(new_label),(s).c_str());
+    gtk_list_box_prepend(GTK_LIST_BOX(this->message_list),new_label);
+    gtk_widget_show(new_label);
+    unisleep(1);
+}
+GameState::~GameState(){
+    for(int i=0;i<this->places.size();++i){
+        delete this->places[i];
+    }
+    for(int i=0;i<this->places.size();++i){
+        delete this->places[i];
+    }
+}
+/* END GAMESTATE */
+
+/* BEGIN RUNTIME MANAGER */
+static void home_button_clicked(GtkButton* button,gpointer data){
+    system("./launcher &");
+    exit(0);
+}
+static void restart_button_clicked(GtkButton* button,gpointer data){
+    system("./game &");
+    exit(0);
+}
+static void help_button_clicked(GtkButton* button,gpointer data){
+    exit(0);
+}
+static void about_button_clicked(GtkButton* button,gpointer data){
+    exit(0);
+}
+/* END RUNTIME MANAGER */
+
+static void running(){
+    int result = gamestate.main_loop();
+    Print("Player "+itos(result)+" wins!");
+    system(("./winning "+itos(result)+" &").c_str());
+    exit(0);
+}
+
+static void music(string conf){
+    ifstream fin(conf.c_str());
+    if(!fin){
+        Error("No music config file!");
+    }
+    vector<string>filename;
+    while(fin){
+        string tmp;
+        fin>>tmp;
+        if(tmp=="")continue;
+        filename.push_back(tmp);
+    }
+    for(int i=0;;++i){
+        Mp3Player player;
+        if(player.open(filename[i%filename.size()])){
+            unisleep(5);
+            continue;
+        }
+        player.play();
+        player.close();
+        unisleep(5);
+    }
+}
+
+static void init(GtkApplication* app,gpointer* app_data){
+    srand(time(NULL));
+    Print("Caterpillar Flight Chess V1.3.0\n");
+    ifstream conf(CONFIG_FILE_NAME),mapin;
+    if(!conf){
+        Error("No config file!");
+    }
+    string map_path;
+    conf>>gamestate.number_of_players;
+    vector<int>type_of_players(gamestate.number_of_players);
+    for(int i=0;i<gamestate.number_of_players;++i){
+        if(!conf)Error("Invalid users definition!");
+        conf>>(type_of_players[i]);
+    }
+    conf>>gamestate.control_mode;
+    conf>>map_path;
+    if(gamestate.number_of_players<2||gamestate.number_of_players>100){
+        Error("Invalid number_of_players!");
+    }
+    mapin.open(map_path.c_str());
+    if(!mapin){
+        Error("Invalid map filename!");
+    }
+    Print("Reading from Map description file: "+map_path);
+    GtkWidget* main_window;
+    main_window = gtk_application_window_new(app);
+    gtk_window_set_title(GTK_WINDOW(main_window),"Flight Chess");
+    gtk_window_set_default_size(GTK_WINDOW(main_window),800,600);
+
+    GtkWidget* main_box;
+    main_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL,0);
+
+    GtkWidget *board_overlay,*board_background,*real_board;
+    board_overlay = gtk_overlay_new();
+
+    string board_background_filename;
+    mapin>>board_background_filename;
+
+    board_background = gtk_image_new_from_file(board_background_filename.c_str());
+    gtk_widget_set_halign(board_background,GTK_ALIGN_START);
+    gtk_widget_set_valign(board_background,GTK_ALIGN_START);
+
+    gtk_container_add(GTK_CONTAINER(board_overlay),board_background);
+
+    real_board = gtk_fixed_new();
+    gtk_widget_set_halign(real_board,GTK_ALIGN_START);
+    gtk_widget_set_valign(real_board,GTK_ALIGN_START);
+    gtk_overlay_add_overlay(GTK_OVERLAY(board_overlay),real_board);
+    gtk_overlay_reorder_overlay(GTK_OVERLAY(board_overlay),real_board,10000);
+    gtk_widget_show_all(board_overlay);
+    
+    GtkWidget* separator;
+    separator = gtk_separator_new(GTK_ORIENTATION_HORIZONTAL);
+
+    GtkWidget* panel;
+    panel = gtk_box_new(GTK_ORIENTATION_VERTICAL,4);
+
+    GtkWidget* panel_box;
+    panel_box = gtk_box_new(GTK_ORIENTATION_HORIZONTAL,0);
+
+    GtkWidget *panel_user_box,*panel_dice_box;
+    panel_user_box = gtk_box_new(GTK_ORIENTATION_VERTICAL,0);
+    panel_dice_box = gtk_box_new(GTK_ORIENTATION_VERTICAL,0);
+
+    GtkWidget *user_image, *user_label, *dice_image, *dice_label;
+    GtkWidget *dice_event_box;
+    user_image = gtk_image_new_from_file(IMG_USER.c_str());
+    dice_image = gtk_image_new_from_file(IMG_DICE.c_str());
+    dice_event_box = gtk_event_box_new();
+    gtk_container_add(GTK_CONTAINER(dice_event_box), dice_image);
+    g_signal_connect(G_OBJECT(dice_event_box),"button_release_event",G_CALLBACK(dice_clicked),dice_image);
+
+    user_label = gtk_label_new("");
+    dice_label = gtk_label_new("");
+
+    gtk_box_pack_end(GTK_BOX(panel_user_box),user_label,FALSE,FALSE,FALSE);
+    gtk_box_pack_end(GTK_BOX(panel_user_box),user_image,FALSE,FALSE,FALSE);
+    gtk_box_pack_end(GTK_BOX(panel_dice_box),dice_label,FALSE,FALSE,FALSE);
+    gtk_box_pack_end(GTK_BOX(panel_dice_box),dice_event_box,FALSE,FALSE,FALSE);
+    
+    gtk_box_pack_start(GTK_BOX(panel_box),panel_user_box,TRUE,FALSE,FALSE);
+    gtk_box_pack_start(GTK_BOX(panel_box),panel_dice_box,TRUE,FALSE,FALSE);
+
+    GtkWidget* panel_button_box = gtk_button_box_new(GTK_ORIENTATION_HORIZONTAL);
+    GtkWidget *home_button,*restart_button,*help_button,*about_button;
+    home_button = gtk_button_new_from_icon_name("go-home-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(home_button),"released",G_CALLBACK(home_button_clicked),NULL);
+    restart_button = gtk_button_new_from_icon_name("system-reboot-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(restart_button),"released",G_CALLBACK(restart_button_clicked),NULL);
+    help_button = gtk_button_new_from_icon_name("help-browser-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(help_button),"released",G_CALLBACK(help_button_clicked),NULL);
+    about_button = gtk_button_new_from_icon_name("help-about-symbolic",GTK_ICON_SIZE_BUTTON);
+    g_signal_connect(G_OBJECT(about_button),"released",G_CALLBACK(about_button_clicked),NULL);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),home_button);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),restart_button);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),help_button);
+    gtk_container_add(GTK_CONTAINER(panel_button_box),about_button);
+
+    GtkWidget *message, *list_of_state;
+    message = gtk_label_new("");
+    gtk_label_set_line_wrap(GTK_LABEL(message),TRUE);
+    gtk_widget_set_size_request(message,200,32);
+    gamestate.message = message;
+
+    GtkWidget *message_list, *message_list_window;
+    message_list = gtk_list_box_new();
+    gamestate.message_list = message_list;
+    message_list_window = gtk_scrolled_window_new(NULL,NULL);
+    gtk_container_add(GTK_CONTAINER(message_list_window),message_list);
+    // gtk_list_box_prepend(GTK_LIST_BOX(panel),panel_box);
+    // gtk_list_box_prepend(GTK_LIST_BOX(panel),message);
+    // gtk_list_box_prepend(GTK_LIST_BOX(panel),panel_button_box);
+
+    gtk_box_pack_start(GTK_BOX(panel),panel_button_box,FALSE,FALSE,0);
+    gtk_box_pack_start(GTK_BOX(panel),panel_box,FALSE,FALSE,4);
+    gtk_box_pack_start(GTK_BOX(panel),message_list_window,TRUE,TRUE,0);
+
+    gtk_box_pack_start(GTK_BOX(main_box),board_overlay,TRUE,TRUE,FALSE);
+    gtk_box_pack_start(GTK_BOX(main_box),separator,FALSE,FALSE,FALSE);
+    gtk_box_pack_end(GTK_BOX(main_box),panel,FALSE,FALSE,FALSE);
+
+    gtk_container_add(GTK_CONTAINER(main_window),main_box);
+    gtk_widget_show_all(main_window);
+
+
+    gamestate.gui_set_elements(real_board,dice_label,user_label);
+    gamestate.read_map(mapin);
+    gamestate.set_player_type(type_of_players);
+
+    c_signal_init();
+
+    string music_conf;
+    conf>>music_conf;
+    thread run_game(running),run_music(music,music_conf);
+    run_game.detach();run_music.detach();
+}
+
+int main(int argc,char **argv){
+    GtkApplication* app;
+    int gui_return;
+
+    app = gtk_application_new(APP_PACKAGE_NAME.c_str(),G_APPLICATION_FLAGS_NONE);
+    g_signal_connect(app,"activate",G_CALLBACK(init),NULL);
+    gui_return = g_application_run(G_APPLICATION(app),argc,argv);
+    g_object_unref(app);
+    return gui_return;
+}
