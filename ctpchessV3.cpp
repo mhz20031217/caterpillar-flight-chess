@@ -21,7 +21,7 @@ const int NUMBER_OF_CHESSES=4;
 #ifdef DEGUG
 const int INTERVAL_USECOND=100;
 #else
-const int INTERVAL_USECOND=50000;
+const int INTERVAL_USECOND=500000;
 #endif
 /* END CONSTANT */
 
@@ -164,7 +164,7 @@ struct move_chess_t{
 };
 gboolean raw_set_label_f(gpointer data){
     raw_set_label_t* pt = (raw_set_label_t*)data;
-    gtk_label_set_label(pt->label,pt->s.c_str());
+    gtk_label_set_markup(pt->label,("<big>"+pt->s+"</big>").c_str());
     g_free(data);
     return FALSE;
 }
@@ -176,8 +176,9 @@ void raw_set_label(GtkWidget* label,string s){
 }
 gboolean update_message_list_f(gpointer data){
     update_message_list_t* pt = (update_message_list_t*)data;
-    GtkWidget* new_label = gtk_label_new(pt->s.c_str());
+    GtkWidget* new_label = gtk_label_new("");
     gtk_label_set_line_wrap(GTK_LABEL(new_label),TRUE);
+    gtk_label_set_markup(GTK_LABEL(new_label),("<big>"+pt->s+"</big>").c_str());
     gtk_list_box_prepend(GTK_LIST_BOX(gamestate.message_list),new_label);
     gtk_widget_show(new_label);
     g_free(data);
