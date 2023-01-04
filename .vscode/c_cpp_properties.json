@@ -74,7 +74,8 @@
                 "-lgio-2.0",
                 "-lgobject-2.0",
                 "-lglib-2.0"
-            ]
+            ],
+            "configurationProvider": "ms-vscode.makefile-tools"
         }
     ],
     "version": 4

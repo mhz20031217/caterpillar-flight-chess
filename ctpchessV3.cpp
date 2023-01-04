@@ -21,7 +21,7 @@ const int NUMBER_OF_CHESSES=4;
 #ifdef DEGUG
 const int INTERVAL_USECOND=100;
 #else
-const int INTERVAL_USECOND=5000;
+const int INTERVAL_USECOND=50000;
 #endif
 /* END CONSTANT */
 
