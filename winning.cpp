@@ -37,15 +37,27 @@ void init(GtkApplication* app,gpointer app_data){
     main_window = gtk_application_window_new(app);
     gtk_window_set_title(GTK_WINDOW(main_window),"You win!");
     gtk_window_set_resizable(GTK_WINDOW(main_window),FALSE);
-    GtkWidget* label;
+    GtkWidget* label, *image;
+
     label = gtk_label_new(("Player "+itos(x)+" wins!").c_str());
-    gtk_label_set_markup(GTK_LABEL(label),("<big>Player "+itos(x)+" wins!</big>").c_str());
-    gtk_container_add(GTK_CONTAINER(main_window),label);
+    gtk_label_set_markup(GTK_LABEL(label),("<big>Player <b>"+itos(x)+"</b> wins!</big>").c_str());
+    
+    image = gtk_image_new_from_file("img/winning.jpg");
+    
+    GtkWidget* box;
+
+    box = gtk_box_new(GTK_ORIENTATION_VERTICAL,0);
+
+    gtk_box_pack_start(GTK_BOX(box),image,FALSE,FALSE,4);
+    gtk_box_pack_start(GTK_BOX(box),label,FALSE,FALSE,0);
+
+    gtk_container_add(GTK_CONTAINER(main_window),box);
 
     gtk_widget_show_all(main_window);
     return;
 }
 int main(int argc,char** argv){
+    if(argc<2)return 0;
     x=stoi(argv[1]);
     argc=1;
     GtkApplication* app;
