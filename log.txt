@@ -1,0 +1,4223 @@
+Caterpillar Flight Chess V1.3.0
+
+Reading from Map description file: map/classic/classic.conf
+Number of places: 97
+Number of visible places: 97
+Request add of Chess (player: 0 place: 81) to 81.
+Request add of Chess (player: 0 place: 82) to 82.
+Request add of Chess (player: 0 place: 83) to 83.
+Request add of Chess (player: 0 place: 84) to 84.
+Request add of Chess (player: 1 place: 85) to 85.
+Request add of Chess (player: 1 place: 86) to 86.
+Request add of Chess (player: 1 place: 87) to 87.
+Request add of Chess (player: 1 place: 88) to 88.
+Request add of Chess (player: 2 place: 89) to 89.
+Request add of Chess (player: 2 place: 90) to 90.
+Request add of Chess (player: 2 place: 91) to 91.
+Request add of Chess (player: 2 place: 92) to 92.
+Request add of Chess (player: 3 place: 93) to 93.
+Request add of Chess (player: 3 place: 94) to 94.
+Request add of Chess (player: 3 place: 95) to 95.
+Request add of Chess (player: 3 place: 96) to 96.
+
+
+Round 0
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 89
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 93
+Player 3: Chess 1: 94
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 1
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 89
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 93) from 93.
+Request add of Chess (player: 3 place: 93) to 74.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 12.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 94
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 2
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 89
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 12
+Player 3: Chess 1: 94
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 3
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 89
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 94
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 4
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 89
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 94
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 5
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 17.
+Player 2: Chess 0: 17
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 94) from 94.
+Request add of Chess (player: 3 place: 94) to 74.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 3.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 6
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 17
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 7
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 90) from 90.
+Request add of Chess (player: 2 place: 90) to 75.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 16.
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 8
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 9
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 10
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 11
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 12
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 13
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 14
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 15
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 3
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 31.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 16
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 31
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 95) from 95.
+Request add of Chess (player: 3 place: 95) to 74.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 12.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 17
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 31
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 18
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 82) from 82.
+Request add of Chess (player: 0 place: 82) to 72.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 38.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+It rolls the dice again to decide its step.
+Dice value: 3
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 44.
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 19
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 83) from 83.
+Request add of Chess (player: 0 place: 83) to 72.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 32.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 32
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 91) from 91.
+Request add of Chess (player: 2 place: 91) to 75.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 25.
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 20
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 32
+Player 0: Chess 3: 84
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 21
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 84) from 84.
+Request add of Chess (player: 0 place: 84) to 72.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 34.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 32
+Player 0: Chess 3: 34
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 22
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 32 to move.
+Request removal of Chess (player: 0 place: 32) from 32.
+Request add of Chess (player: 0 place: 32) to 33.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 33
+Player 0: Chess 3: 34
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 23
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 33 to move.
+Request removal of Chess (player: 0 place: 33) from 33.
+Request add of Chess (player: 0 place: 33) to 42.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 42
+Player 0: Chess 3: 34
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 96
+
+
+Round 24
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 34 to move.
+Request removal of Chess (player: 0 place: 34) from 34.
+Request add of Chess (player: 0 place: 34) to 35.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 38
+Player 0: Chess 2: 42
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 96) from 96.
+Request add of Chess (player: 3 place: 96) to 74.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 3.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 3
+Player 3: Chess 2: 12
+Player 3: Chess 3: 3
+
+
+Round 25
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 38 to move.
+Request removal of Chess (player: 0 place: 38) from 38.
+Request add of Chess (player: 0 place: 38) to 46.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 46
+Player 0: Chess 2: 42
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 3 to move.
+Request removal of Chess (player: 3 place: 3) from 3.
+Request add of Chess (player: 3 place: 3) to 8.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 12
+Player 3: Chess 3: 3
+
+
+Round 26
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 46 to move.
+Request removal of Chess (player: 0 place: 46) from 46.
+Request add of Chess (player: 0 place: 46) to 47.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 47
+Player 0: Chess 2: 42
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 3 to move.
+Request removal of Chess (player: 3 place: 3) from 3.
+Request add of Chess (player: 3 place: 3) to 8.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 12
+Player 3: Chess 3: 8
+
+
+Round 27
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 31 to move.
+Request removal of Chess (player: 0 place: 31) from 31.
+Request add of Chess (player: 0 place: 31) to 36.
+Player 0: Chess 0: 36
+Player 0: Chess 1: 47
+Player 0: Chess 2: 42
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 92) from 92.
+Request add of Chess (player: 2 place: 92) to 75.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 16.
+Player 2: Chess 0: 17
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 16
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 8 to move.
+Request removal of Chess (player: 3 place: 8) from 8.
+Request add of Chess (player: 3 place: 8) to 9.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 12
+Player 3: Chess 3: 9
+
+
+Round 28
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 47 to move.
+Request removal of Chess (player: 0 place: 47) from 47.
+Request add of Chess (player: 0 place: 47) to 2.
+Player 0: Chess 0: 36
+Player 0: Chess 1: 2
+Player 0: Chess 2: 42
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 44
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 17 to move.
+Request removal of Chess (player: 2 place: 17) from 17.
+Request add of Chess (player: 2 place: 17) to 20.
+Player 2: Chess 0: 20
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 16
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 12 to move.
+Request removal of Chess (player: 3 place: 12) from 12.
+Request add of Chess (player: 3 place: 12) to 14.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 14
+Player 3: Chess 3: 9
+
+
+Round 29
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 42 to move.
+Request removal of Chess (player: 0 place: 42) from 42.
+Request add of Chess (player: 0 place: 42) to 44.
+Removing opponent Chess (player: 0 place: 42) from 44.
+Request removal of Chess (player: 1 place: 44) from 44.
+Request add of Chess (player: 1 place: 44) to 85.
+Player 0: Chess 0: 36
+Player 0: Chess 1: 2
+Player 0: Chess 2: 44
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 85
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 20 to move.
+Request removal of Chess (player: 2 place: 20) from 20.
+Request add of Chess (player: 2 place: 20) to 29.
+Player 2: Chess 0: 29
+Player 2: Chess 1: 16
+Player 2: Chess 2: 25
+Player 2: Chess 3: 16
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 14 to move.
+Request removal of Chess (player: 3 place: 14) from 14.
+Request add of Chess (player: 3 place: 14) to 20.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 20
+Player 3: Chess 3: 9
+
+
+Round 30
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 36 to move.
+Request removal of Chess (player: 0 place: 36) from 36.
+Request add of Chess (player: 0 place: 36) to 42.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 2
+Player 0: Chess 2: 44
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 45.
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 2 place: 16) from 16.
+Request add of Chess (player: 2 place: 16) to 25.
+Player 2: Chess 0: 29
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 16
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 9 to move.
+Request removal of Chess (player: 3 place: 9) from 9.
+Request add of Chess (player: 3 place: 9) to 11.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 20
+Player 3: Chess 3: 11
+
+
+Round 31
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 2 to move.
+Request removal of Chess (player: 0 place: 2) from 2.
+Request add of Chess (player: 0 place: 2) to 7.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 7
+Player 0: Chess 2: 44
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 2 place: 16) from 16.
+Request add of Chess (player: 2 place: 16) to 20.
+Removing opponent Chess (player: 2 place: 16) from 20.
+Request removal of Chess (player: 3 place: 20) from 20.
+Request add of Chess (player: 3 place: 20) to 93.
+Player 2: Chess 0: 29
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 20
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 32
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 44 to move.
+Request removal of Chess (player: 0 place: 44) from 44.
+Request add of Chess (player: 0 place: 44) to 50.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 7
+Player 0: Chess 2: 50
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 29 to move.
+Request removal of Chess (player: 2 place: 29) from 29.
+Request add of Chess (player: 2 place: 29) to 37.
+Player 2: Chess 0: 37
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 20
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 33
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 7 to move.
+Request removal of Chess (player: 0 place: 7) from 7.
+Request add of Chess (player: 0 place: 7) to 12.
+Removing opponent Chess (player: 0 place: 7) from 12.
+Request removal of Chess (player: 3 place: 12) from 12.
+Request add of Chess (player: 3 place: 12) to 94.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 12
+Player 0: Chess 2: 50
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 20 to move.
+Request removal of Chess (player: 2 place: 20) from 20.
+Request add of Chess (player: 2 place: 20) to 23.
+Player 2: Chess 0: 37
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 94
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 34
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 35 to move.
+Request removal of Chess (player: 0 place: 35) from 35.
+Request add of Chess (player: 0 place: 35) to 37.
+Removing opponent Chess (player: 0 place: 35) from 37.
+Request removal of Chess (player: 2 place: 37) from 37.
+Request add of Chess (player: 2 place: 37) to 89.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 12
+Player 0: Chess 2: 50
+Player 0: Chess 3: 37
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 89
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 94
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 35
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 37 to move.
+Request removal of Chess (player: 0 place: 37) from 37.
+Request add of Chess (player: 0 place: 37) to 46.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 12
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 89
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 94) from 94.
+Request add of Chess (player: 3 place: 94) to 74.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 3.
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 36
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 12 to move.
+Request removal of Chess (player: 0 place: 12) from 12.
+Request add of Chess (player: 0 place: 12) to 18.
+Player 0: Chess 0: 42
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 89
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 37
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 42 to move.
+Request removal of Chess (player: 0 place: 42) from 42.
+Request add of Chess (player: 0 place: 42) to 50.
+Player 0: Chess 0: 50
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 5
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 20.
+Player 2: Chess 0: 20
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 38
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 50 to move.
+Request removal of Chess (player: 0 place: 50) from 50.
+Request add of Chess (player: 0 place: 50) to 1.
+Player 0: Chess 0: 1
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 20 to move.
+Request removal of Chess (player: 2 place: 20) from 20.
+Request add of Chess (player: 2 place: 20) to 29.
+Player 2: Chess 0: 29
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 39
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 1 to move.
+Request removal of Chess (player: 0 place: 1) from 1.
+Request add of Chess (player: 0 place: 1) to 3.
+Removing opponent Chess (player: 0 place: 1) from 3.
+Request removal of Chess (player: 3 place: 3) from 3.
+Request add of Chess (player: 3 place: 3) to 94.
+Player 0: Chess 0: 3
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 45
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 29 to move.
+Request removal of Chess (player: 2 place: 29) from 29.
+Request add of Chess (player: 2 place: 29) to 30.
+Player 2: Chess 0: 30
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 94) from 94.
+Request add of Chess (player: 3 place: 94) to 74.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 3.
+Removing opponent Chess (player: 3 place: 74) from 3.
+Request removal of Chess (player: 0 place: 3) from 3.
+Request add of Chess (player: 0 place: 3) to 81.
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 40
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 3
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 31.
+Player 0: Chess 0: 31
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 86) from 86.
+Request add of Chess (player: 1 place: 86) to 73.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 45.
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 30 to move.
+Request removal of Chess (player: 2 place: 30) from 30.
+Request add of Chess (player: 2 place: 30) to 31.
+Removing opponent Chess (player: 2 place: 30) from 31.
+Request removal of Chess (player: 0 place: 31) from 31.
+Request add of Chess (player: 0 place: 31) to 81.
+Player 2: Chess 0: 31
+Player 2: Chess 1: 25
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 41
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 29.
+Player 0: Chess 0: 29
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 25 to move.
+Request removal of Chess (player: 2 place: 25) from 25.
+Request add of Chess (player: 2 place: 25) to 33.
+Player 2: Chess 0: 31
+Player 2: Chess 1: 33
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 93
+Player 3: Chess 3: 11
+
+
+Round 42
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 29 to move.
+Request removal of Chess (player: 0 place: 29) from 29.
+Request add of Chess (player: 0 place: 29) to 33.
+Removing opponent Chess (player: 0 place: 29) from 33.
+Request removal of Chess (player: 2 place: 33) from 33.
+Request add of Chess (player: 2 place: 33) to 89.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 18
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 25
+Player 2: Chess 3: 23
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 93) from 93.
+Request add of Chess (player: 3 place: 93) to 74.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 8.
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 8
+Player 3: Chess 3: 11
+
+
+Round 43
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 18 to move.
+Request removal of Chess (player: 0 place: 18) from 18.
+Request add of Chess (player: 0 place: 18) to 23.
+Removing opponent Chess (player: 0 place: 18) from 23.
+Request removal of Chess (player: 2 place: 23) from 23.
+Request add of Chess (player: 2 place: 23) to 90.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 23
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 25
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 8 to move.
+Request removal of Chess (player: 3 place: 8) from 8.
+Request add of Chess (player: 3 place: 8) to 10.
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 10
+Player 3: Chess 3: 11
+
+
+Round 44
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 23 to move.
+Request removal of Chess (player: 0 place: 23) from 23.
+Request add of Chess (player: 0 place: 23) to 25.
+Removing opponent Chess (player: 0 place: 23) from 25.
+Request removal of Chess (player: 2 place: 25) from 25.
+Request add of Chess (player: 2 place: 25) to 91.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 25
+Player 0: Chess 2: 50
+Player 0: Chess 3: 46
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 10 to move.
+Request removal of Chess (player: 3 place: 10) from 10.
+Request add of Chess (player: 3 place: 10) to 16.
+Player 3: Chess 0: 3
+Player 3: Chess 1: 8
+Player 3: Chess 2: 16
+Player 3: Chess 3: 11
+
+
+Round 45
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 46 to move.
+Request removal of Chess (player: 0 place: 46) from 46.
+Request add of Chess (player: 0 place: 46) to 48.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 25
+Player 0: Chess 2: 50
+Player 0: Chess 3: 48
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 17.
+Player 2: Chess 0: 31
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 3 to move.
+Request removal of Chess (player: 3 place: 3) from 3.
+Request add of Chess (player: 3 place: 3) to 12.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 16
+Player 3: Chess 3: 11
+
+
+Round 46
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 33 to move.
+Request removal of Chess (player: 0 place: 33) from 33.
+Request add of Chess (player: 0 place: 33) to 38.
+Player 0: Chess 0: 38
+Player 0: Chess 1: 25
+Player 0: Chess 2: 50
+Player 0: Chess 3: 48
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 31
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 3 place: 16) from 16.
+Request add of Chess (player: 3 place: 16) to 18.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 18
+Player 3: Chess 3: 11
+
+
+Round 47
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 38 to move.
+Request removal of Chess (player: 0 place: 38) from 38.
+Request add of Chess (player: 0 place: 38) to 46.
+Player 0: Chess 0: 46
+Player 0: Chess 1: 25
+Player 0: Chess 2: 50
+Player 0: Chess 3: 48
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 31
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 11 to move.
+Request removal of Chess (player: 3 place: 11) from 11.
+Request add of Chess (player: 3 place: 11) to 16.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 18
+Player 3: Chess 3: 16
+
+
+Round 48
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 48 to move.
+Request removal of Chess (player: 0 place: 48) from 48.
+Request add of Chess (player: 0 place: 48) to 49.
+Player 0: Chess 0: 46
+Player 0: Chess 1: 25
+Player 0: Chess 2: 50
+Player 0: Chess 3: 49
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 87) from 87.
+Request add of Chess (player: 1 place: 87) to 73.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 45.
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 31
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 18 to move.
+Request removal of Chess (player: 3 place: 18) from 18.
+Request add of Chess (player: 3 place: 18) to 32.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 32
+Player 3: Chess 3: 16
+
+
+Round 49
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 50 to move.
+Request removal of Chess (player: 0 place: 50) from 50.
+Request add of Chess (player: 0 place: 50) to 1.
+Player 0: Chess 0: 46
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 49
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 31
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 32 to move.
+Request removal of Chess (player: 3 place: 32) from 32.
+Request add of Chess (player: 3 place: 32) to 38.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 38
+Player 3: Chess 3: 16
+
+
+Round 50
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 49 to move.
+Request removal of Chess (player: 0 place: 49) from 49.
+Request add of Chess (player: 0 place: 49) to 0.
+Player 0: Chess 0: 46
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 0
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 88) from 88.
+Request add of Chess (player: 1 place: 88) to 73.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 47.
+Player 1: Chess 0: 45
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 31
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 3 place: 16) from 16.
+Request add of Chess (player: 3 place: 16) to 17.
+Removing opponent Chess (player: 3 place: 16) from 17.
+Request removal of Chess (player: 2 place: 17) from 17.
+Request add of Chess (player: 2 place: 17) to 89.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 8
+Player 3: Chess 2: 38
+Player 3: Chess 3: 17
+
+
+Round 51
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 0 to move.
+Request removal of Chess (player: 0 place: 0) from 0.
+Request add of Chess (player: 0 place: 0) to 10.
+Player 0: Chess 0: 46
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 10
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 45 to move.
+Request removal of Chess (player: 1 place: 45) from 45.
+Request add of Chess (player: 1 place: 45) to 46.
+Removing opponent Chess (player: 1 place: 45) from 46.
+Request removal of Chess (player: 0 place: 46) from 46.
+Request add of Chess (player: 0 place: 46) to 81.
+Player 1: Chess 0: 46
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 12 to move.
+Request removal of Chess (player: 3 place: 12) from 12.
+Request add of Chess (player: 3 place: 12) to 20.
+Player 3: Chess 0: 20
+Player 3: Chess 1: 8
+Player 3: Chess 2: 38
+Player 3: Chess 3: 17
+
+
+Round 52
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 81
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 10
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 46 to move.
+Request removal of Chess (player: 1 place: 46) from 46.
+Request add of Chess (player: 1 place: 46) to 51.
+Player 1: Chess 0: 51
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 8 to move.
+Request removal of Chess (player: 3 place: 8) from 8.
+Request add of Chess (player: 3 place: 8) to 9.
+Player 3: Chess 0: 20
+Player 3: Chess 1: 9
+Player 3: Chess 2: 38
+Player 3: Chess 3: 17
+
+
+Round 53
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 81
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 10
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 45 to move.
+Request removal of Chess (player: 1 place: 45) from 45.
+Request add of Chess (player: 1 place: 45) to 48.
+Player 1: Chess 0: 51
+Player 1: Chess 1: 45
+Player 1: Chess 2: 48
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 38 to move.
+Request removal of Chess (player: 3 place: 38) from 38.
+Request add of Chess (player: 3 place: 38) to 48.
+Removing opponent Chess (player: 3 place: 38) from 48.
+Request removal of Chess (player: 1 place: 48) from 48.
+Request add of Chess (player: 1 place: 48) to 85.
+Player 3: Chess 0: 20
+Player 3: Chess 1: 9
+Player 3: Chess 2: 48
+Player 3: Chess 3: 17
+
+
+Round 54
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 81
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 10
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 51
+Player 1: Chess 1: 45
+Player 1: Chess 2: 85
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 16.
+Player 2: Chess 0: 31
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 9 to move.
+Request removal of Chess (player: 3 place: 9) from 9.
+Request add of Chess (player: 3 place: 9) to 10.
+Removing opponent Chess (player: 3 place: 9) from 10.
+Request removal of Chess (player: 0 place: 10) from 10.
+Request add of Chess (player: 0 place: 10) to 82.
+Player 3: Chess 0: 20
+Player 3: Chess 1: 10
+Player 3: Chess 2: 48
+Player 3: Chess 3: 17
+
+
+Round 55
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 29.
+Player 0: Chess 0: 29
+Player 0: Chess 1: 25
+Player 0: Chess 2: 1
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 51
+Player 1: Chess 1: 45
+Player 1: Chess 2: 85
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 31
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 20 to move.
+Request removal of Chess (player: 3 place: 20) from 20.
+Request add of Chess (player: 3 place: 20) to 25.
+Removing opponent Chess (player: 3 place: 20) from 25.
+Request removal of Chess (player: 0 place: 25) from 25.
+Request add of Chess (player: 0 place: 25) to 81.
+Player 3: Chess 0: 25
+Player 3: Chess 1: 10
+Player 3: Chess 2: 48
+Player 3: Chess 3: 17
+
+
+Round 56
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 29.
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 1
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 45.
+Player 1: Chess 0: 51
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 47
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 31
+Player 2: Chess 1: 16
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 10 to move.
+Request removal of Chess (player: 3 place: 10) from 10.
+Request add of Chess (player: 3 place: 10) to 16.
+Removing opponent Chess (player: 3 place: 10) from 16.
+Request removal of Chess (player: 2 place: 16) from 16.
+Request add of Chess (player: 2 place: 16) to 89.
+Player 3: Chess 0: 25
+Player 3: Chess 1: 16
+Player 3: Chess 2: 48
+Player 3: Chess 3: 17
+
+
+Round 57
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 1
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 47 to move.
+Request removal of Chess (player: 1 place: 47) from 47.
+Request add of Chess (player: 1 place: 47) to 1.
+Removing opponent Chess (player: 1 place: 47) from 1.
+Request removal of Chess (player: 0 place: 1) from 1.
+Request add of Chess (player: 0 place: 1) to 81.
+Player 1: Chess 0: 51
+Player 1: Chess 1: 45
+Player 1: Chess 2: 45
+Player 1: Chess 3: 1
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 31
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 25 to move.
+Request removal of Chess (player: 3 place: 25) from 25.
+Request add of Chess (player: 3 place: 25) to 31.
+Removing opponent Chess (player: 3 place: 25) from 31.
+Request removal of Chess (player: 2 place: 31) from 31.
+Request add of Chess (player: 2 place: 31) to 92.
+Player 3: Chess 0: 31
+Player 3: Chess 1: 16
+Player 3: Chess 2: 48
+Player 3: Chess 3: 17
+
+
+Round 58
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 81
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 45 to move.
+Request removal of Chess (player: 1 place: 45) from 45.
+Request add of Chess (player: 1 place: 45) to 3.
+Player 1: Chess 0: 51
+Player 1: Chess 1: 3
+Player 1: Chess 2: 45
+Player 1: Chess 3: 1
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 31 to move.
+Request removal of Chess (player: 3 place: 31) from 31.
+Request add of Chess (player: 3 place: 31) to 40.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 16
+Player 3: Chess 2: 48
+Player 3: Chess 3: 17
+
+
+Round 59
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 81
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 45 to move.
+Request removal of Chess (player: 1 place: 45) from 45.
+Request add of Chess (player: 1 place: 45) to 48.
+Removing opponent Chess (player: 1 place: 45) from 48.
+Request removal of Chess (player: 3 place: 48) from 48.
+Request add of Chess (player: 3 place: 48) to 93.
+Player 1: Chess 0: 51
+Player 1: Chess 1: 3
+Player 1: Chess 2: 48
+Player 1: Chess 3: 1
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 40
+Player 3: Chess 1: 16
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 60
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 81
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 51 to move.
+Request removal of Chess (player: 1 place: 51) from 51.
+Request add of Chess (player: 1 place: 51) to 7.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 3
+Player 1: Chess 2: 48
+Player 1: Chess 3: 1
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 40
+Player 3: Chess 1: 16
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 61
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 81
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 1 to move.
+Request removal of Chess (player: 1 place: 1) from 1.
+Request add of Chess (player: 1 place: 1) to 11.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 3
+Player 1: Chess 2: 48
+Player 1: Chess 3: 11
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 93) from 93.
+Request add of Chess (player: 3 place: 93) to 74.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 8.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 16
+Player 3: Chess 2: 8
+Player 3: Chess 3: 17
+
+
+Round 62
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 81
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 3 to move.
+Request removal of Chess (player: 1 place: 3) from 3.
+Request add of Chess (player: 1 place: 3) to 8.
+Removing opponent Chess (player: 1 place: 3) from 8.
+Request removal of Chess (player: 3 place: 8) from 8.
+Request add of Chess (player: 3 place: 8) to 93.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 8
+Player 1: Chess 2: 48
+Player 1: Chess 3: 11
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 40
+Player 3: Chess 1: 16
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 63
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 38.
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 48 to move.
+Request removal of Chess (player: 1 place: 48) from 48.
+Request add of Chess (player: 1 place: 48) to 49.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 8
+Player 1: Chess 2: 49
+Player 1: Chess 3: 11
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 92) from 92.
+Request add of Chess (player: 2 place: 92) to 75.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 16.
+Removing opponent Chess (player: 2 place: 75) from 16.
+Request removal of Chess (player: 3 place: 16) from 16.
+Request add of Chess (player: 3 place: 16) to 94.
+Player 2: Chess 0: 16
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 40
+Player 3: Chess 1: 94
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 64
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 8 to move.
+Request removal of Chess (player: 1 place: 8) from 8.
+Request add of Chess (player: 1 place: 8) to 15.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 15
+Player 1: Chess 2: 49
+Player 1: Chess 3: 11
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 16
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 94) from 94.
+Request add of Chess (player: 3 place: 94) to 74.
+It rolls the dice again to decide its step.
+Dice value: 3
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 5.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 65
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 11 to move.
+Request removal of Chess (player: 1 place: 11) from 11.
+Request add of Chess (player: 1 place: 11) to 16.
+Removing opponent Chess (player: 1 place: 11) from 16.
+Request removal of Chess (player: 2 place: 16) from 16.
+Request add of Chess (player: 2 place: 16) to 92.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 15
+Player 1: Chess 2: 49
+Player 1: Chess 3: 16
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 92) from 92.
+Request add of Chess (player: 2 place: 92) to 75.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 19.
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 66
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 1 place: 16) from 16.
+Request add of Chess (player: 1 place: 16) to 21.
+Player 1: Chess 0: 7
+Player 1: Chess 1: 15
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 67
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 7 to move.
+Request removal of Chess (player: 1 place: 7) from 7.
+Request add of Chess (player: 1 place: 7) to 15.
+Player 1: Chess 0: 15
+Player 1: Chess 1: 15
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 93
+Player 3: Chess 3: 17
+
+
+Round 68
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 15 to move.
+Request removal of Chess (player: 1 place: 15) from 15.
+Request add of Chess (player: 1 place: 15) to 23.
+Player 1: Chess 0: 23
+Player 1: Chess 1: 15
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 17.
+Removing opponent Chess (player: 2 place: 75) from 17.
+Request removal of Chess (player: 3 place: 17) from 17.
+Request add of Chess (player: 3 place: 17) to 94.
+Player 2: Chess 0: 19
+Player 2: Chess 1: 17
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 93
+Player 3: Chess 3: 94
+
+
+Round 69
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 15 to move.
+Request removal of Chess (player: 1 place: 15) from 15.
+Request add of Chess (player: 1 place: 15) to 17.
+Removing opponent Chess (player: 1 place: 15) from 17.
+Request removal of Chess (player: 2 place: 17) from 17.
+Request add of Chess (player: 2 place: 17) to 89.
+Player 1: Chess 0: 23
+Player 1: Chess 1: 17
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 93
+Player 3: Chess 3: 94
+
+
+Round 70
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 17 to move.
+Request removal of Chess (player: 1 place: 17) from 17.
+Request add of Chess (player: 1 place: 17) to 18.
+Player 1: Chess 0: 23
+Player 1: Chess 1: 18
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 5
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 20.
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 93) from 93.
+Request add of Chess (player: 3 place: 93) to 74.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 3.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 3
+Player 3: Chess 3: 94
+
+
+Round 71
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 82
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 18 to move.
+Request removal of Chess (player: 1 place: 18) from 18.
+Request add of Chess (player: 1 place: 18) to 23.
+Player 1: Chess 0: 23
+Player 1: Chess 1: 23
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 3
+Player 3: Chess 3: 94
+
+
+Round 72
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 82) from 82.
+Request add of Chess (player: 0 place: 82) to 72.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 38.
+Player 0: Chess 0: 29
+Player 0: Chess 1: 29
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 23 to move.
+Request removal of Chess (player: 1 place: 23) from 23.
+Request add of Chess (player: 1 place: 23) to 29.
+Removing opponent Chess (player: 1 place: 23) from 29.
+Request removal of Chess (player: 0 place: 29) from 29.
+Request add of Chess (player: 0 place: 29) to 81.
+Removing opponent Chess (player: 1 place: 23) from 29.
+Request removal of Chess (player: 0 place: 29) from 29.
+Request add of Chess (player: 0 place: 29) to 82.
+Player 1: Chess 0: 29
+Player 1: Chess 1: 23
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 3
+Player 3: Chess 3: 94
+
+
+Round 73
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 34.
+Player 0: Chess 0: 34
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 29 to move.
+Request removal of Chess (player: 1 place: 29) from 29.
+Request add of Chess (player: 1 place: 29) to 30.
+Player 1: Chess 0: 30
+Player 1: Chess 1: 23
+Player 1: Chess 2: 49
+Player 1: Chess 3: 21
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 94) from 94.
+Request add of Chess (player: 3 place: 94) to 74.
+It rolls the dice again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 8.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 3
+Player 3: Chess 3: 8
+
+
+Round 74
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 34
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 21 to move.
+Request removal of Chess (player: 1 place: 21) from 21.
+Request add of Chess (player: 1 place: 21) to 24.
+Player 1: Chess 0: 30
+Player 1: Chess 1: 23
+Player 1: Chess 2: 49
+Player 1: Chess 3: 24
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 3 to move.
+Request removal of Chess (player: 3 place: 3) from 3.
+Request add of Chess (player: 3 place: 3) to 12.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 12
+Player 3: Chess 3: 8
+
+
+Round 75
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 34
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 30 to move.
+Request removal of Chess (player: 1 place: 30) from 30.
+Request add of Chess (player: 1 place: 30) to 34.
+Removing opponent Chess (player: 1 place: 30) from 34.
+Request removal of Chess (player: 0 place: 34) from 34.
+Request add of Chess (player: 0 place: 34) to 81.
+Player 1: Chess 0: 34
+Player 1: Chess 1: 23
+Player 1: Chess 2: 49
+Player 1: Chess 3: 24
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 8 to move.
+Request removal of Chess (player: 3 place: 8) from 8.
+Request add of Chess (player: 3 place: 8) to 10.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 12
+Player 3: Chess 3: 10
+
+
+Round 76
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 32.
+Player 0: Chess 0: 32
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 49 to move.
+Request removal of Chess (player: 1 place: 49) from 49.
+Request add of Chess (player: 1 place: 49) to 3.
+Player 1: Chess 0: 34
+Player 1: Chess 1: 23
+Player 1: Chess 2: 3
+Player 1: Chess 3: 24
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 19
+Player 2: Chess 1: 20
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 12 to move.
+Request removal of Chess (player: 3 place: 12) from 12.
+Request add of Chess (player: 3 place: 12) to 20.
+Removing opponent Chess (player: 3 place: 12) from 20.
+Request removal of Chess (player: 2 place: 20) from 20.
+Request add of Chess (player: 2 place: 20) to 89.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 20
+Player 3: Chess 3: 10
+
+
+Round 77
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 32
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 24 to move.
+Request removal of Chess (player: 1 place: 24) from 24.
+Request add of Chess (player: 1 place: 24) to 31.
+Player 1: Chess 0: 34
+Player 1: Chess 1: 23
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 20 to move.
+Request removal of Chess (player: 3 place: 20) from 20.
+Request add of Chess (player: 3 place: 20) to 23.
+Removing opponent Chess (player: 3 place: 20) from 23.
+Request removal of Chess (player: 1 place: 23) from 23.
+Request add of Chess (player: 1 place: 23) to 85.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 23
+Player 3: Chess 3: 10
+
+
+Round 78
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 32
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 34
+Player 1: Chess 1: 85
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 23 to move.
+Request removal of Chess (player: 3 place: 23) from 23.
+Request add of Chess (player: 3 place: 23) to 32.
+Removing opponent Chess (player: 3 place: 23) from 32.
+Request removal of Chess (player: 0 place: 32) from 32.
+Request add of Chess (player: 0 place: 32) to 81.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 32
+Player 3: Chess 3: 10
+
+
+Round 79
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 34
+Player 1: Chess 1: 85
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 32 to move.
+Request removal of Chess (player: 3 place: 32) from 32.
+Request add of Chess (player: 3 place: 32) to 37.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 37
+Player 3: Chess 3: 10
+
+
+Round 80
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 34
+Player 1: Chess 1: 85
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 10 to move.
+Request removal of Chess (player: 3 place: 10) from 10.
+Request add of Chess (player: 3 place: 10) to 16.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 5
+Player 3: Chess 2: 37
+Player 3: Chess 3: 16
+
+
+Round 81
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 81
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 1: Chess 0: 34
+Player 1: Chess 1: 85
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 5 to move.
+Request removal of Chess (player: 3 place: 5) from 5.
+Request add of Chess (player: 3 place: 5) to 7.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 7
+Player 3: Chess 2: 37
+Player 3: Chess 3: 16
+
+
+Round 82
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 5
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 33.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 38
+Player 0: Chess 3: 38
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 34
+Player 1: Chess 1: 85
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 19
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 37 to move.
+Request removal of Chess (player: 3 place: 37) from 37.
+Request add of Chess (player: 3 place: 37) to 38.
+Removing opponent Chess (player: 3 place: 37) from 38.
+Request removal of Chess (player: 0 place: 38) from 38.
+Request add of Chess (player: 0 place: 38) to 81.
+Removing opponent Chess (player: 3 place: 37) from 38.
+Request removal of Chess (player: 0 place: 38) from 38.
+Request add of Chess (player: 0 place: 38) to 83.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 7
+Player 3: Chess 2: 38
+Player 3: Chess 3: 16
+
+
+Round 83
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 51.
+Player 1: Chess 0: 34
+Player 1: Chess 1: 51
+Player 1: Chess 2: 3
+Player 1: Chess 3: 31
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 89) from 89.
+Request add of Chess (player: 2 place: 89) to 75.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 19.
+Player 2: Chess 0: 19
+Player 2: Chess 1: 19
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 38 to move.
+Request removal of Chess (player: 3 place: 38) from 38.
+Request add of Chess (player: 3 place: 38) to 48.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 7
+Player 3: Chess 2: 48
+Player 3: Chess 3: 16
+
+
+Round 84
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 82) from 82.
+Request add of Chess (player: 0 place: 82) to 72.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 32.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 32
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 31 to move.
+Request removal of Chess (player: 1 place: 31) from 31.
+Request add of Chess (player: 1 place: 31) to 32.
+Removing opponent Chess (player: 1 place: 31) from 32.
+Request removal of Chess (player: 0 place: 32) from 32.
+Request add of Chess (player: 0 place: 32) to 82.
+Player 1: Chess 0: 34
+Player 1: Chess 1: 51
+Player 1: Chess 2: 3
+Player 1: Chess 3: 32
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 19
+Player 2: Chess 1: 19
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 3 place: 16) from 16.
+Request add of Chess (player: 3 place: 16) to 19.
+Removing opponent Chess (player: 3 place: 16) from 19.
+Request removal of Chess (player: 2 place: 19) from 19.
+Request add of Chess (player: 2 place: 19) to 89.
+Removing opponent Chess (player: 3 place: 16) from 19.
+Request removal of Chess (player: 2 place: 19) from 19.
+Request add of Chess (player: 2 place: 19) to 92.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 7
+Player 3: Chess 2: 48
+Player 3: Chess 3: 19
+
+
+Round 85
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 34 to move.
+Request removal of Chess (player: 1 place: 34) from 34.
+Request add of Chess (player: 1 place: 34) to 39.
+Player 1: Chess 0: 39
+Player 1: Chess 1: 51
+Player 1: Chess 2: 3
+Player 1: Chess 3: 32
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 48 to move.
+Request removal of Chess (player: 3 place: 48) from 48.
+Request add of Chess (player: 3 place: 48) to 53.
+Player 3: Chess 0: 40
+Player 3: Chess 1: 7
+Player 3: Chess 2: 53
+Player 3: Chess 3: 19
+
+
+Round 86
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 3 to move.
+Request removal of Chess (player: 1 place: 3) from 3.
+Request add of Chess (player: 1 place: 3) to 9.
+Player 1: Chess 0: 39
+Player 1: Chess 1: 51
+Player 1: Chess 2: 9
+Player 1: Chess 3: 32
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 40 to move.
+Request removal of Chess (player: 3 place: 40) from 40.
+Request add of Chess (player: 3 place: 40) to 48.
+Player 3: Chess 0: 48
+Player 3: Chess 1: 7
+Player 3: Chess 2: 53
+Player 3: Chess 3: 19
+
+
+Round 87
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 9 to move.
+Request removal of Chess (player: 1 place: 9) from 9.
+Request add of Chess (player: 1 place: 9) to 15.
+Player 1: Chess 0: 39
+Player 1: Chess 1: 51
+Player 1: Chess 2: 15
+Player 1: Chess 3: 32
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 92) from 92.
+Request add of Chess (player: 2 place: 92) to 75.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 25.
+Player 2: Chess 0: 25
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 19 to move.
+Request removal of Chess (player: 3 place: 19) from 19.
+Request add of Chess (player: 3 place: 19) to 25.
+Removing opponent Chess (player: 3 place: 19) from 25.
+Request removal of Chess (player: 2 place: 25) from 25.
+Request add of Chess (player: 2 place: 25) to 92.
+Player 3: Chess 0: 48
+Player 3: Chess 1: 7
+Player 3: Chess 2: 53
+Player 3: Chess 3: 25
+
+
+Round 88
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 32 to move.
+Request removal of Chess (player: 1 place: 32) from 32.
+Request add of Chess (player: 1 place: 32) to 37.
+Player 1: Chess 0: 39
+Player 1: Chess 1: 51
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 53 to move.
+Request removal of Chess (player: 3 place: 53) from 53.
+Request add of Chess (player: 3 place: 53) to 78.
+Player 3: Chess 0: 48
+Player 3: Chess 1: 7
+Player 3: Chess 2: 78
+Player 3: Chess 3: 25
+
+
+Round 89
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 39 to move.
+Request removal of Chess (player: 1 place: 39) from 39.
+Request add of Chess (player: 1 place: 39) to 59.
+Player 1: Chess 0: 59
+Player 1: Chess 1: 51
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 48 to move.
+Request removal of Chess (player: 3 place: 48) from 48.
+Request add of Chess (player: 3 place: 48) to 51.
+Removing opponent Chess (player: 3 place: 48) from 51.
+Request removal of Chess (player: 1 place: 51) from 51.
+Request add of Chess (player: 1 place: 51) to 85.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 7
+Player 3: Chess 2: 78
+Player 3: Chess 3: 25
+
+
+Round 90
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 7 to move.
+Request removal of Chess (player: 3 place: 7) from 7.
+Request add of Chess (player: 3 place: 7) to 9.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 9
+Player 3: Chess 2: 78
+Player 3: Chess 3: 25
+
+
+Round 91
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 9 to move.
+Request removal of Chess (player: 3 place: 9) from 9.
+Request add of Chess (player: 3 place: 9) to 16.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 16
+Player 3: Chess 2: 78
+Player 3: Chess 3: 25
+
+
+Round 92
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 82) from 82.
+Request add of Chess (player: 0 place: 82) to 72.
+It rolls the dice again to decide its step.
+Dice value: 5
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 33.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 78 to move.
+Request removal of Chess (player: 3 place: 78) from 78.
+Request add of Chess (player: 3 place: 78) to 0.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 16
+Player 3: Chess 2: 0
+Player 3: Chess 3: 25
+
+
+Round 93
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 81
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 25 to move.
+Request removal of Chess (player: 3 place: 25) from 25.
+Request add of Chess (player: 3 place: 25) to 31.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 16
+Player 3: Chess 2: 0
+Player 3: Chess 3: 31
+
+
+Round 94
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 29.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 83
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 2 place: 92) from 92.
+Request add of Chess (player: 2 place: 92) to 75.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 2 place: 75) from 75.
+Request add of Chess (player: 2 place: 75) to 25.
+Player 2: Chess 0: 25
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 31 to move.
+Request removal of Chess (player: 3 place: 31) from 31.
+Request add of Chess (player: 3 place: 31) to 40.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 16
+Player 3: Chess 2: 0
+Player 3: Chess 3: 40
+
+
+Round 95
+Player 0:
+Computer 0 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 0 place: 83) from 83.
+Request add of Chess (player: 0 place: 83) to 72.
+It rolls the dice again to decide its step.
+Dice value: 1
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 29.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 29
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 25
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 40 to move.
+Request removal of Chess (player: 3 place: 40) from 40.
+Request add of Chess (player: 3 place: 40) to 41.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 16
+Player 3: Chess 2: 0
+Player 3: Chess 3: 41
+
+
+Round 96
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 29 to move.
+Request removal of Chess (player: 0 place: 29) from 29.
+Request add of Chess (player: 0 place: 29) to 35.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 35
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 25
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 41 to move.
+Request removal of Chess (player: 3 place: 41) from 41.
+Request add of Chess (player: 3 place: 41) to 48.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 16
+Player 3: Chess 2: 0
+Player 3: Chess 3: 48
+
+
+Round 97
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 3
+It rolls the dice and gets the value of 3
+And chooses the chess at 35 to move.
+Request removal of Chess (player: 0 place: 35) from 35.
+Request add of Chess (player: 0 place: 35) to 42.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 42
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 25
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 16 to move.
+Request removal of Chess (player: 3 place: 16) from 16.
+Request add of Chess (player: 3 place: 16) to 21.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 21
+Player 3: Chess 2: 0
+Player 3: Chess 3: 48
+
+
+Round 98
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 42 to move.
+Request removal of Chess (player: 0 place: 42) from 42.
+Request add of Chess (player: 0 place: 42) to 44.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 44
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 1: Chess 0: 59
+Player 1: Chess 1: 85
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 2: Chess 0: 25
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 21 to move.
+Request removal of Chess (player: 3 place: 21) from 21.
+Request add of Chess (player: 3 place: 21) to 25.
+Removing opponent Chess (player: 3 place: 21) from 25.
+Request removal of Chess (player: 2 place: 25) from 25.
+Request add of Chess (player: 2 place: 25) to 92.
+Player 3: Chess 0: 51
+Player 3: Chess 1: 25
+Player 3: Chess 2: 0
+Player 3: Chess 3: 48
+
+
+Round 99
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 33 to move.
+Request removal of Chess (player: 0 place: 33) from 33.
+Request add of Chess (player: 0 place: 33) to 38.
+Player 0: Chess 0: 38
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 44
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 51.
+Removing opponent Chess (player: 1 place: 73) from 51.
+Request removal of Chess (player: 3 place: 51) from 51.
+Request add of Chess (player: 3 place: 51) to 93.
+Player 1: Chess 0: 59
+Player 1: Chess 1: 51
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 4
+Player 3: Chess 0: 93
+Player 3: Chess 1: 25
+Player 3: Chess 2: 0
+Player 3: Chess 3: 48
+
+
+Round 100
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 44 to move.
+Request removal of Chess (player: 0 place: 44) from 44.
+Request add of Chess (player: 0 place: 44) to 2.
+Player 0: Chess 0: 38
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 2
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 5
+It rolls the dice and gets the value of 5
+And chooses the chess at 59 to move.
+Request removal of Chess (player: 1 place: 59) from 59.
+Request add of Chess (player: 1 place: 59) to 60.
+Player 1: Chess 0: 60
+Player 1: Chess 1: 51
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 3
+Player 3: Chess 0: 93
+Player 3: Chess 1: 25
+Player 3: Chess 2: 0
+Player 3: Chess 3: 48
+
+
+Round 101
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 2
+It rolls the dice and gets the value of 2
+And chooses the chess at 38 to move.
+Request removal of Chess (player: 0 place: 38) from 38.
+Request add of Chess (player: 0 place: 38) to 40.
+Player 0: Chess 0: 40
+Player 0: Chess 1: 33
+Player 0: Chess 2: 29
+Player 0: Chess 3: 2
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 51 to move.
+Request removal of Chess (player: 1 place: 51) from 51.
+Request add of Chess (player: 1 place: 51) to 0.
+Removing opponent Chess (player: 1 place: 51) from 0.
+Request removal of Chess (player: 3 place: 0) from 0.
+Request add of Chess (player: 3 place: 0) to 94.
+Player 1: Chess 0: 60
+Player 1: Chess 1: 0
+Player 1: Chess 2: 15
+Player 1: Chess 3: 37
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 1
+Player 3: Chess 0: 93
+Player 3: Chess 1: 25
+Player 3: Chess 2: 94
+Player 3: Chess 3: 48
+
+
+Round 102
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 4
+It rolls the dice and gets the value of 4
+And chooses the chess at 33 to move.
+Request removal of Chess (player: 0 place: 33) from 33.
+Request add of Chess (player: 0 place: 33) to 37.
+Removing opponent Chess (player: 0 place: 33) from 37.
+Request removal of Chess (player: 1 place: 37) from 37.
+Request add of Chess (player: 1 place: 37) to 85.
+Player 0: Chess 0: 40
+Player 0: Chess 1: 37
+Player 0: Chess 2: 29
+Player 0: Chess 3: 2
+Player 1:
+Computer 1 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+It rolls the dice again to decide its step.
+Dice value: 4
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 45.
+Player 1: Chess 0: 60
+Player 1: Chess 1: 0
+Player 1: Chess 2: 15
+Player 1: Chess 3: 45
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 3: Chess 0: 93
+Player 3: Chess 1: 25
+Player 3: Chess 2: 94
+Player 3: Chess 3: 48
+
+
+Round 103
+Player 0:
+Computer 0 has no planes in its airport.
+Dice value: 1
+It rolls the dice and gets the value of 1
+And chooses the chess at 37 to move.
+Request removal of Chess (player: 0 place: 37) from 37.
+Request add of Chess (player: 0 place: 37) to 42.
+Player 0: Chess 0: 40
+Player 0: Chess 1: 42
+Player 0: Chess 2: 29
+Player 0: Chess 3: 2
+Player 1:
+Computer 1 has no planes in its airport.
+Dice value: 6
+It rolls the dice and gets the value of 6
+And chooses the chess at 45 to move.
+Request removal of Chess (player: 1 place: 45) from 45.
+Request add of Chess (player: 1 place: 45) to 3.
+Player 1: Chess 0: 60
+Player 1: Chess 1: 0
+Player 1: Chess 2: 15
+Player 1: Chess 3: 3
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 2
+Player 2: Chess 0: 92
+Player 2: Chess 1: 89
+Player 2: Chess 2: 91
+Player 2: Chess 3: 90
+Player 3:
