@@ -1,6 +1,6 @@
 Caterpillar Flight Chess V1.3.0
 
-Reading from Map description file: map/classic/classic.conf
+Reading from Map description file: /home/pc/Coding/Learning/Framework/GTK/Project/CaterpillarFlightChess/map/classic/classic.conf
 Number of places: 97
 Number of visible places: 97
 Request add of Chess (player: 0 place: 81) to 81.
@@ -25,3 +25,67 @@ Round 0
 Player 0:
 User 0, you still have plane(s) in your airport.
 Please roll dice.
+Dice value: 6
+Request removal of Chess (player: 0 place: 81) from 81.
+Request add of Chess (player: 0 place: 81) to 72.
+Great! You got 6 and please roll again to decide its step.
+Dice value: 5
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 33.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 82
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
+User 1, you still have plane(s) in your airport.
+Please roll dice.
+Dice value: 6
+Request removal of Chess (player: 1 place: 85) from 85.
+Request add of Chess (player: 1 place: 85) to 73.
+Great! You got 6 and please roll again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 1 place: 73) from 73.
+Request add of Chess (player: 1 place: 73) to 47.
+Player 1: Chess 0: 47
+Player 1: Chess 1: 86
+Player 1: Chess 2: 87
+Player 1: Chess 3: 88
+Player 2:
+Computer 2 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 5
+Player 2: Chess 0: 89
+Player 2: Chess 1: 90
+Player 2: Chess 2: 91
+Player 2: Chess 3: 92
+Player 3:
+Computer 3 still has plane(s) in its airport. It rolls the dice to decide whether a plane will take off.
+Dice value: 6
+The result is 6 and a plane takes off.
+Request removal of Chess (player: 3 place: 93) from 93.
+Request add of Chess (player: 3 place: 93) to 74.
+It rolls the dice again to decide its step.
+Dice value: 6
+Request removal of Chess (player: 3 place: 74) from 74.
+Request add of Chess (player: 3 place: 74) to 12.
+Player 3: Chess 0: 12
+Player 3: Chess 1: 94
+Player 3: Chess 2: 95
+Player 3: Chess 3: 96
+
+
+Round 1
+Player 0:
+User 0, you still have plane(s) in your airport.
+Please roll dice.
+Dice value: 6
+Request removal of Chess (player: 0 place: 82) from 82.
+Request add of Chess (player: 0 place: 82) to 72.
+Great! You got 6 and please roll again to decide its step.
+Dice value: 2
+Request removal of Chess (player: 0 place: 72) from 72.
+Request add of Chess (player: 0 place: 72) to 34.
+Player 0: Chess 0: 33
+Player 0: Chess 1: 34
+Player 0: Chess 2: 83
+Player 0: Chess 3: 84
+Player 1:
